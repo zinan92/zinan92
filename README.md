@@ -5,6 +5,13 @@
 
 📍 Shanghai
 
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)
+![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Shell](https://img.shields.io/badge/-Shell-121212?style=flat-square&logo=gnu-bash&logoColor=white)
+
 ---
 
 ## what I'm building
@@ -19,9 +26,9 @@
 
 ---
 
-## stack
+## activity
 
-`Python` `FastAPI` `TypeScript` `Claude` `SQLite` `Shell` `vibes`
+![GitHub Contribution Graph](https://ghchart.rshah.org/zinan92)
 
 ---
 
