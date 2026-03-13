@@ -1,4 +1,4 @@
-# parkzz
+# hi, it's parkzz
 
 > I automate markets. I automate code. I automate my own videos.
 > Working on automating sleep.
