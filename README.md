@@ -32,6 +32,8 @@
 
 🤖 **[agent-core](https://github.com/zinan92/agent-core)** — an OS for agents, built by an agent
 
+🧩 **[skills-repo](https://github.com/zinan92/skills-repo)** — 60 skills for AI agents. Flat namespace, one SKILL.md each.
+
 ---
 
 ## activity
