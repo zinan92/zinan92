@@ -16,13 +16,21 @@
 
 ## what I'm building
 
+### data
+
 📊 **[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)** — feeding numbers to the beast
 
 🧠 **[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)** — teaching AI to read Twitter so I don't have to
 
-🤖 **[agent-core](https://github.com/zinan92/agent-core)** — an OS for agents, built by an agent
+### content
 
 ✂️  **[videocut](https://github.com/zinan92/videocut)** — Whisper cuts my videos. I just talk.
+
+📥 **[douyin-downloader](https://github.com/zinan92/douyin-downloader)** — paste a Douyin link, get markdown transcripts
+
+### agent
+
+🤖 **[agent-core](https://github.com/zinan92/agent-core)** — an OS for agents, built by an agent
 
 ---
 
