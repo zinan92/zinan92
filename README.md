@@ -34,6 +34,8 @@
 
 🧩 **[skills-repo](https://github.com/zinan92/skills-repo)** — 60 skills for AI agents. Flat namespace, one SKILL.md each.
 
+🧾 **[doc-driven-dev-workflow](https://github.com/zinan92/doc-driven-dev-workflow)** — PRDs, plans, reviews, and handoffs for Codex + Claude Code
+
 ---
 
 ## activity
