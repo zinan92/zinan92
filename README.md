@@ -20,7 +20,7 @@
 
 📊 **[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)** — feeding numbers to the beast
 
-🧠 **[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)** — teaching AI to read Twitter so I don't have to
+🧠 **[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)** — 10+ sources → structured signals API. 从噪音中提取市场叙事
 
 ### content
 
