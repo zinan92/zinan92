@@ -32,7 +32,7 @@
 
 🤖 **[agent-core](https://github.com/zinan92/agent-core)** — an OS for agents, built by an agent
 
-🧩 **[skills-repo](https://github.com/zinan92/skills-repo)** — 60 AI agent skills, grouped into global / data / content / dev / trading
+🧩 **[skills-repo](https://github.com/zinan92/skills-repo)** — 61 AI agent skills, domain-grouped and frontmatter-routed
 
 🧾 **[doc-driven-dev-workflow](https://github.com/zinan92/doc-driven-dev-workflow)** — PRDs, plans, reviews, and handoffs for Codex + Claude Code
 
