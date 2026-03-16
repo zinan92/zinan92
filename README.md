@@ -26,7 +26,7 @@
 
 ✂️  **[videocut](https://github.com/zinan92/videocut)** — Whisper cuts my videos. I just talk.
 
-📥 **[douyin-downloader](https://github.com/zinan92/douyin-downloader)** — paste a Douyin link, get markdown transcripts
+📥 **[douyin-downloader](https://github.com/zinan92/douyin-downloader)** — paste a Douyin link, get readable transcripts with auto-paragraphing
 
 📥 **[xiaohongshu-downloader](https://github.com/zinan92/xiaohongshu-downloader)** — skill-driven Xiaohongshu export, ranking, and incremental updates for product intel
 
