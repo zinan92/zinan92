@@ -28,6 +28,8 @@
 
 📥 **[douyin-downloader](https://github.com/zinan92/douyin-downloader)** — paste a Douyin link, get markdown transcripts
 
+📥 **[xiaohongshu-downloader](https://github.com/zinan92/xiaohongshu-downloader)** — skill-driven Xiaohongshu export, ranking, and incremental updates for product intel
+
 ### dev
 
 🤖 **[agent-core](https://github.com/zinan92/agent-core)** — an OS for agents, built by an agent
