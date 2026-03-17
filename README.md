@@ -30,6 +30,8 @@
 
 📥 **[xiaohongshu-downloader](https://github.com/zinan92/xiaohongshu-downloader)** — skill-driven Xiaohongshu export, ranking, and incremental updates for product intel
 
+🎬 **[seedance-expert](https://github.com/zinan92/seedance-expert)** — Claude Code skill that turns you into a Seedance 2.0 director. 10 task types, 50+ prompt templates
+
 ### dev
 
 🤖 **[agent-core](https://github.com/zinan92/agent-core)** — an OS for agents, built by an agent
