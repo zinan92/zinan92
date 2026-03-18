@@ -32,6 +32,10 @@
 
 🎬 **[seedance-expert](https://github.com/zinan92/seedance-expert)** — Claude Code skill that turns you into a Seedance 2.0 director. 10 task types, 50+ prompt templates
 
+### trading
+
+📈 **[trading-skills-catalog](https://github.com/zinan92/trading-skills-catalog)** — 39 Claude Code skills for systematic trading. one `/trading-hub` to rule them all
+
 ### dev
 
 🤖 **[agent-core](https://github.com/zinan92/agent-core)** — an OS for agents, built by an agent
