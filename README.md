@@ -20,7 +20,7 @@
 
 📊 **[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)** — feeding numbers to the beast
 
-🧠 **[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)** — 10+ sources → structured signals API. 从噪音中提取市场叙事
+🧠 **[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)** — trading signal intelligence. 10+ sources → cross-source event clustering → AI narratives → ticker price impacts → force-directed constellation viz
 
 ### content
 
