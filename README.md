@@ -28,6 +28,8 @@
 
 🎬 **[seedance-expert](https://github.com/zinan92/seedance-expert)** — Claude Code skill that turns you into a Seedance 2.0 director. 10 task types, 50+ prompt templates
 
+🧪 **[AI-videos](https://github.com/zinan92/AI-videos)** — virtual character video pipeline. Klein outfit swap + Kling motion transfer + model benchmarks on RunningHub
+
 🍴 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — batch Douyin downloader with dedup, retries, and browser fallback
 
 🍴 **[mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)** — easy voice generation skill for OpenClaw
