@@ -38,6 +38,8 @@
 
 ### dev
 
+🔭 **[proactive-explorer](https://github.com/zinan92/proactive-explorer)** — what to build next? 5-category framework for turning v1 repos into star magnets
+
 🤖 **[agent-core](https://github.com/zinan92/agent-core)** — an OS for agents, built by an agent
 
 🧩 **[skills-repo](https://github.com/zinan92/skills-repo)** — 61 AI agent skills, domain-grouped and frontmatter-routed
