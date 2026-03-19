@@ -26,11 +26,11 @@
 
 ✂️  **[videocut](https://github.com/zinan92/videocut)** — Whisper cuts my videos. I just talk.
 
-📥 **[douyin-downloader](https://github.com/zinan92/douyin-downloader)** — paste a Douyin link, get readable transcripts with auto-paragraphing
-
-📥 **[xiaohongshu-downloader](https://github.com/zinan92/xiaohongshu-downloader)** — skill-driven Xiaohongshu export, ranking, and incremental updates for product intel
-
 🎬 **[seedance-expert](https://github.com/zinan92/seedance-expert)** — Claude Code skill that turns you into a Seedance 2.0 director. 10 task types, 50+ prompt templates
+
+🍴 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — batch Douyin downloader with dedup, retries, and browser fallback
+
+🍴 **[mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)** — easy voice generation skill for OpenClaw
 
 ### trading
 
@@ -42,7 +42,17 @@
 
 🧩 **[skills-repo](https://github.com/zinan92/skills-repo)** — 61 AI agent skills, domain-grouped and frontmatter-routed
 
-🧾 **[doc-driven-dev-workflow](https://github.com/zinan92/doc-driven-dev-workflow)** — PRDs, plans, reviews, and handoffs for Codex + Claude Code
+🍴 **[bb-browser](https://github.com/zinan92/bb-browser)** — your browser is the API. CLI + MCP server for AI agents to control Chrome
+
+🍴 **[opencli](https://github.com/zinan92/opencli)** — make any website your CLI. AI-native browser automation and web data extraction
+
+🍴 **[agent-browser](https://github.com/zinan92/agent-browser)** — browser automation CLI for AI agents
+
+🍴 **[lossless-claw](https://github.com/zinan92/lossless-claw)** — lossless context management plugin for OpenClaw
+
+🍴 **[skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter)** — skill quality checker
+
+🍴 **[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)** — self-improving agent skill
 
 ---
 
