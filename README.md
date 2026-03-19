@@ -34,7 +34,7 @@
 
 ### trading
 
-📈 **[trading-skills-catalog](https://github.com/zinan92/trading-skills-catalog)** — 39 Claude Code skills for systematic trading. one `/trading-hub` to rule them all
+📈 **[trading-copilot](https://github.com/zinan92/trading-skills-catalog)** — tell AI your trading idea, it picks from 44 methodologies and gives you the play. free to use
 
 ### dev
 
