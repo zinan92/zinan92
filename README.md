@@ -24,6 +24,8 @@
 
 ### content
 
+🔍 **[content-intelligence](https://github.com/zinan92/content-intelligence)** — feed it XHS/Douyin data, get back trends, patterns, and what to create next
+
 ✂️  **[videocut](https://github.com/zinan92/videocut)** — record once, publish everywhere. auto-cuts, subtitles, articles, cards, and posts for 8 platforms
 
 🎬 **[seedance-expert](https://github.com/zinan92/seedance-expert)** — Claude Code skill that turns you into a Seedance 2.0 director. 10 task types, 50+ prompt templates
