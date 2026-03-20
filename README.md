@@ -32,6 +32,8 @@
 
 🧪 **[AI-videos](https://github.com/zinan92/AI-videos)** — virtual character video pipeline. Klein outfit swap + Kling motion transfer + model benchmarks on RunningHub
 
+📥 **[xiaohongshu-downloader](https://github.com/zinan92/xiaohongshu-downloader)** — XHS competitive intel CLI for AI agents. export, rank, track engagement over time, Whisper transcribe, and generate decision reports
+
 🍴 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — batch Douyin downloader with dedup, retries, and browser fallback
 
 🍴 **[mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)** — easy voice generation skill for OpenClaw
