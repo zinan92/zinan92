@@ -34,6 +34,10 @@
 
 🍴 **[mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)** — easy voice generation skill for OpenClaw
 
+🍴 **[frontend-slides](https://github.com/zarazhangrui/frontend-slides)** — Claude Code skill for creating animation-rich HTML presentations from scratch or by converting PowerPoint files
+
+🍴 **[libtv-skills](https://github.com/libtv-labs/libtv-skills)** — AI agent skills for LibLib.tv's AIGC platform. image & video generation via OpenAPI
+
 ### trading
 
 📈 **[trading-copilot](https://github.com/zinan92/trading-skills-catalog)** — tell AI your trading idea, it picks from 44 methodologies and gives you the play. free to use
