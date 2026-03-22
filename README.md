@@ -32,7 +32,9 @@
 
 🧪 **[AI-videos](https://github.com/zinan92/AI-videos)** — virtual character video pipeline. Klein outfit swap + Kling motion transfer + model benchmarks on RunningHub
 
-📥 **[xiaohongshu-downloader](https://github.com/zinan92/xiaohongshu-downloader)** — XHS competitive intel CLI for AI agents. export, rank, track engagement over time, Whisper transcribe, and generate decision reports
+🍴 **[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)** — feature-complete XHS media downloader. TUI/CLI/API/MCP, async, resumable, atomic writes. 10k+ ⭐
+
+🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)** — multi-platform crawler for XHS, Douyin, Kuaishou, Bilibili, Weibo. login, search, comments, IP proxy pool
 
 🍴 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — batch Douyin downloader with dedup, retries, and browser fallback
 
