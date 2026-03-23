@@ -34,9 +34,17 @@
 > `收集` · 输入: 小红书链接/用户主页 → 输出: 图片/视频/音频原始文件
 > TUI/CLI/API/MCP 四种模式，异步下载，断点续传，原子写入。10k+ ⭐
 
-🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)** — 多平台内容爬虫
+🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)** — 多平台主动爬虫
 > `收集` · 输入: 关键词/用户ID/帖子链接 → 输出: 帖子/评论/用户数据（JSON/CSV）
-> 覆盖小红书、抖音、快手、B站、微博。支持登录态、搜索、评论抓取、IP 代理池
+> 主动爬取，需登录态。覆盖小红书、抖音、快手、B站、微博。搜索、评论、IP 代理池。**vs res-downloader**: 这个是主动爬虫拿结构化数据，res-downloader 是被动代理拦截拿媒体文件
+
+🍴 **[res-downloader](https://github.com/putyy/res-downloader)** — 跨平台被动资源嗅探器
+> `收集` · 输入: 正常浏览任意平台 → 输出: 视频/音频/图片原始文件
+> 代理拦截模式，无需登录无需 API。覆盖视频号、小程序、抖音、快手、小红书、直播流、m3u8、酷狗、QQ音乐。**vs MediaCrawler**: 这个是被动嗅探拿媒体文件，MediaCrawler 是主动爬虫拿结构化数据
+
+🍴 **[Scrapling](https://github.com/D4Vinci/Scrapling)** — 自适应通用爬虫框架
+> `收集` · 输入: URL + CSS/XPath 选择器 → 输出: 结构化数据（JSON/JSONL）
+> 通用网页爬虫框架，不限平台。自适应解析（页面改版自动定位），Cloudflare 绕过，断点续爬，MCP 服务器。**vs MediaCrawler**: 这个是通用框架爬任何网站，MediaCrawler 是针对特定中文平台的专用爬虫
 
 📥 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — 抖音内容管线
 > `收集` · 输入: 抖音视频链接/用户主页 → 输出: 视频文件 + Whisper 转录文本（Markdown/JSON）
@@ -88,7 +96,15 @@
 > `分发` · 输入: 生成好的图片/视频 → 输出: 发布到 LibLib.tv 平台
 > AI agent 技能，通过 OpenAPI 接口自动发图发视频，批量上传
 
-### 交易 `研究 → 决策 → 执行`
+### 交易 `分析 → 决策 → 执行`
+
+#### 📊 分析
+
+🍴 **[daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)** — LLM 驱动的每日股票分析
+> `分析` · 输入: A/H/美股股票代码 + 行情数据（AKShare/TuShare/YFinance）+ 实时新闻 → 输出: 买卖信号仪表盘 + 多渠道推送（微信/飞书/Telegram）
+> GitHub Actions 零成本定时运行，LLM 综合研判，回测 agent，每日自动生成分析报告
+
+#### 📈 决策
 
 📈 **[trading-copilot](https://github.com/zinan92/trading-skills-catalog)** — 交易副驾驶
 > `决策` · 输入: 你的交易想法（自然语言） → 输出: 方法论匹配 + 结构化交易建议
@@ -112,6 +128,10 @@
 
 #### 🔧 自动化
 
+🍴 **[CLI-Anything](https://github.com/HKUDS/CLI-Anything)** — 任何软件一键生成 CLI
+> `自动化` · 输入: 源代码（本地或 GitHub） → 输出: 生产级 Python CLI 包（Click + JSON 输出 + REPL + 测试）
+> 7 阶段管线：分析 → 设计 → 实现 → 测试 → 文档 → 发布。让所有软件 Agent-Native
+
 🍴 **[bb-browser](https://github.com/zinan92/bb-browser)** — 浏览器即 API
 > `自动化` · 输入: 自然语言指令 → 输出: 浏览器操作结果
 > CLI + MCP 服务器，让 AI agent 操控 Chrome，网页数据提取
@@ -125,6 +145,14 @@
 > 快照驱动的浏览器自动化 CLI，配合 dev server 测试和 E2E 验证
 
 #### 🔌 增强
+
+🍴 **[superpowers](https://github.com/obra/superpowers)** — AI 编程工作流引擎
+> `增强` · 输入: 功能需求/开发任务 → 输出: 设计文档 + 实现计划 + 测试通过的代码 + 代码审查报告
+> 完整的 7 阶段开发方法论（设计 → 计划 → 编码 → 测试 → 审查 → 验证 → 完成），强制 TDD，子 agent 并行分解任务
+
+🍴 **[web-access](https://github.com/eze-is/web-access)** — Claude Code 完整联网能力
+> `增强` · 输入: 自然语言查询 → 输出: 网页内容/截图/提取数据
+> 三层通道调度（WebSearch → CDP 浏览器 → curl），登录态保持，并行子 agent 调研，站点知识持久化
 
 🍴 **[lossless-claw](https://github.com/zinan92/lossless-claw)** — 无损上下文管理
 > `增强` · 输入: OpenClaw 会话 → 输出: 压缩前自动保存的上下文快照
