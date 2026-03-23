@@ -30,9 +30,9 @@
 
 #### 📥 收集
 
-🍴 **[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)** — 小红书全功能下载器
-> `收集` · 输入: 小红书链接/用户主页 → 输出: 图片/视频/音频原始文件
-> TUI/CLI/API/MCP 四种模式，异步下载，断点续传，原子写入。10k+ ⭐
+🍴 **[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)** — 小红书媒体提取器
+> `收集` · 输入: 小红书链接/用户主页/搜索词 → 输出: 图片/视频/音频原始文件 + 元数据
+> 单向提取工具，专注把内容从小红书拉出来。TUI/CLI/API/MCP 四种模式，异步断点续传，原子写入。适合研究、分析、归档。10k+ ⭐。**vs RedBox**: 这个是纯提取工具拿媒体文件，RedBox 是完整创作工作台覆盖采集→创作→发布全流程
 
 🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)** — 多平台主动爬虫
 > `收集` · 输入: 关键词/用户ID/帖子链接 → 输出: 帖子/评论/用户数据（JSON/CSV）
@@ -55,8 +55,8 @@
 > 在线工具无需搭建环境，支持 Docker/Cloudflare 私有部署，HTML 格式 100% 还原排版。8k+ ⭐
 
 🍴 **[RedBox](https://github.com/Jamailar/RedBox)** — 小红书创作者工作台
-> `收集` · 输入: 小红书账号/关键词 → 输出: 本地知识库 + 结构化内容档案
-> 内置浏览器一键采集，多工位隔离，本地知识库检索，AI 写作助手，RedClaw 自动化接口
+> `收集` · 输入: 小红书账号/关键词/创作灵感 → 输出: 本地知识库 + AI 生成的内容草稿 + 封面设计 + 定时发布
+> 双向工具，既能采集也能发布。内置浏览器一键采集、本地知识库、多工位隔离、AI 写作助手、智囊团群聊、RedClaw 自动化。**vs XHS-Downloader**: 这个是完整创作工作台覆盖采集→创作→发布，XHS-Downloader 是纯提取工具只做下载
 
 #### 🔍 分析
 
