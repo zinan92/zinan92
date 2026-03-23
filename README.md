@@ -1,9 +1,9 @@
-# hi, it's parkzz
+# 嘿，我是 parkzz
 
-> I automate markets. I automate code. I automate my own videos.
-> Working on automating sleep.
+> 我自动化交易，自动化写代码，自动化做视频。
+> 正在研究怎么自动化睡觉。
 
-📍 Shanghai
+📍 上海
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -14,63 +14,133 @@
 
 ---
 
-## what I'm building
+## 在造的东西
 
-### data
+### 数据 `采集 → 清洗 → 分析 → 可视化`
 
-📊 **[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)** — feeding numbers to the beast
+📊 **[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)** — 量化数据管线
+> `采集 → 清洗 → 存储 → 查询` · 输入: AKShare/TuShare/Yahoo 行情 → 输出: 标准化 SQLite 数据库
+> 自动拉取 A 股/美股/期货行情，清洗入库，提供 FastAPI 查询接口。定时任务，增量更新
 
-🧠 **[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)** — trading signal intelligence. 10+ sources → cross-source event clustering → AI narratives → ticker price impacts → force-directed constellation viz
+🧠 **[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)** — 定性信号情报系统
+> `采集 → 聚类 → 叙事 → 可视化` · 输入: 10+ 信息源（Twitter/HN/Substack/新浪等） → 输出: 事件图谱 + AI 摘要 + 标的影响评分
+> 跨源事件自动聚类，LLM 生成叙事摘要，标的价格影响量化，力导向星座图可视化
 
-### content
+### 内容 `收集 → 分析 → 生产 → 分发`
 
-🔍 **[content-intelligence](https://github.com/zinan92/content-intelligence)** — feed it XHS/Douyin data, get back trends, patterns, and what to create next
+#### 📥 收集
 
-✂️  **[videocut](https://github.com/zinan92/videocut)** — record once, publish everywhere. auto-cuts, subtitles, articles, cards, and posts for 8 platforms
+🍴 **[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)** — 小红书全功能下载器
+> `收集` · 输入: 小红书链接/用户主页 → 输出: 图片/视频/音频原始文件
+> TUI/CLI/API/MCP 四种模式，异步下载，断点续传，原子写入。10k+ ⭐
 
-🎬 **[seedance-expert](https://github.com/zinan92/seedance-expert)** — Claude Code skill that turns you into a Seedance 2.0 director. 10 task types, 50+ prompt templates
+🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)** — 多平台内容爬虫
+> `收集` · 输入: 关键词/用户ID/帖子链接 → 输出: 帖子/评论/用户数据（JSON/CSV）
+> 覆盖小红书、抖音、快手、B站、微博。支持登录态、搜索、评论抓取、IP 代理池
 
-🧪 **[AI-videos](https://github.com/zinan92/AI-videos)** — virtual character video pipeline. Klein outfit swap + Kling motion transfer + model benchmarks on RunningHub
+📥 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — 抖音内容管线
+> `收集` · 输入: 抖音视频链接/用户主页 → 输出: 视频文件 + Whisper 转录文本（Markdown/JSON）
+> 下载 → 本地 Whisper 转录 → 结构化归档。支持批量、时间序列、并发下载
 
-🍴 **[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)** — feature-complete XHS media downloader. TUI/CLI/API/MCP, async, resumable, atomic writes. 10k+ ⭐
+🍴 **[wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter)** — 微信公众号文章批量下载
+> `收集` · 输入: 公众号名称 → 输出: HTML/JSON/Excel/Markdown/DOCX 文章文件 + 阅读量/评论数据
+> 在线工具无需搭建环境，支持 Docker/Cloudflare 私有部署，HTML 格式 100% 还原排版。8k+ ⭐
 
-🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)** — multi-platform crawler for XHS, Douyin, Kuaishou, Bilibili, Weibo. login, search, comments, IP proxy pool
+🍴 **[RedBox](https://github.com/Jamailar/RedBox)** — 小红书创作者工作台
+> `收集` · 输入: 小红书账号/关键词 → 输出: 本地知识库 + 结构化内容档案
+> 内置浏览器一键采集，多工位隔离，本地知识库检索，AI 写作助手，RedClaw 自动化接口
 
-📥 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — Douyin content pipeline: download → transcribe → archive → analyze. local Whisper, Markdown output, structured JSON
+#### 🔍 分析
 
-🍴 **[mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)** — easy voice generation skill for OpenClaw
+🔍 **[content-intelligence](https://github.com/zinan92/content-intelligence)** — 内容情报分析
+> `分析` · 输入: 小红书/抖音采集数据 → 输出: 趋势报告 + 内容策略建议
+> 分析爆款规律、内容趋势、竞品动态，告诉你下一步该做什么内容
 
-🍴 **[frontend-slides](https://github.com/zarazhangrui/frontend-slides)** — Claude Code skill for creating animation-rich HTML presentations from scratch or by converting PowerPoint files
+#### ✨ 生产
 
-🍴 **[libtv-skills](https://github.com/libtv-labs/libtv-skills)** — AI agent skills for LibLib.tv's AIGC platform. image & video generation via OpenAPI
+✂️ **[videocut](https://github.com/zinan92/videocut)** — 口播内容工厂
+> `生产` · 输入: 一段录像 → 输出: 剪辑视频 + 字幕 + 文章 + 卡片 + 8 平台发布稿
+> 一个命令 7 阶段：录制 → 剪辑 → 内容生成 → 卡片 → manifest → 发布。Web Dashboard 管理
 
-### trading
+🎬 **[seedance-expert](https://github.com/zinan92/seedance-expert)** — 即梦 2.0 AI 导演
+> `生产` · 输入: 文字描述/参考图片 → 输出: 即梦 2.0 视频生成提示词
+> Claude Code 技能，10 种任务类型（文生视频/图生视频/延展/编辑等），50+ 提示词模板
 
-📈 **[trading-copilot](https://github.com/zinan92/trading-skills-catalog)** — tell AI your trading idea, it picks from 44 methodologies and gives you the play. free to use
+🧪 **[AI-videos](https://github.com/zinan92/AI-videos)** — 虚拟角色视频管线
+> `生产` · 输入: 人物照片 + 动作参考 → 输出: 换装/动作迁移后的 AI 视频
+> Klein 换装 + Kling 动作迁移 + RunningHub 模型跑分，全流程 workflow
 
-### dev
+🍴 **[mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)** — 语音生成技能
+> `生产` · 输入: 文本 + 风格参数 → 输出: AI 语音音频
+> OpenClaw 技能，调用 MiniMax 语音合成，支持情绪和语速控制
 
-🔭 **[proactive-explorer](https://github.com/zinan92/proactive-explorer)** — what to build next? 5-category framework for turning v1 repos into star magnets
+🍴 **[frontend-slides](https://github.com/zarazhangrui/frontend-slides)** — 动画演示文稿生成
+> `生产` · 输入: 主题描述 或 PPT 文件 → 输出: 动画丰富的 HTML 演示文稿
+> Claude Code 技能，从零创作或从 PowerPoint 转换，自带过渡动画和交互效果
 
-🤖 **[agent-core](https://github.com/zinan92/agent-core)** — an OS for agents, built by an agent
+🍴 **[gsap-skills](https://github.com/greensock/gsap-skills)** — GSAP 官方动画 AI 技能包
+> `生产` · 输入: 动画需求描述 → 输出: 符合最佳实践的 GSAP 动画代码
+> 8 个专项技能（核心动画/时间轴/ScrollTrigger/插件/性能优化/React/Vue/Svelte），支持 40+ AI 编程助手
 
-🧩 **[skills-repo](https://github.com/zinan92/skills-repo)** — 61 AI agent skills, domain-grouped and frontmatter-routed
+#### 🚀 分发
 
-🍴 **[bb-browser](https://github.com/zinan92/bb-browser)** — your browser is the API. CLI + MCP server for AI agents to control Chrome
+🍴 **[libtv-skills](https://github.com/libtv-labs/libtv-skills)** — LibLib.tv AIGC 平台发布技能
+> `分发` · 输入: 生成好的图片/视频 → 输出: 发布到 LibLib.tv 平台
+> AI agent 技能，通过 OpenAPI 接口自动发图发视频，批量上传
 
-🍴 **[opencli](https://github.com/zinan92/opencli)** — make any website your CLI. AI-native browser automation and web data extraction
+### 交易 `研究 → 决策 → 执行`
 
-🍴 **[agent-browser](https://github.com/zinan92/agent-browser)** — browser automation CLI for AI agents
+📈 **[trading-copilot](https://github.com/zinan92/trading-skills-catalog)** — 交易副驾驶
+> `决策` · 输入: 你的交易想法（自然语言） → 输出: 方法论匹配 + 结构化交易建议
+> 44 套交易方法论 system prompt + MiniMax/Anthropic 双引擎，免费在线使用
 
-🍴 **[lossless-claw](https://github.com/zinan92/lossless-claw)** — lossless context management plugin for OpenClaw
+### 开发工具 `框架 → 自动化 → 增强`
 
-🍴 **[skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter)** — skill quality checker
+#### 🏗️ 框架
 
-🍴 **[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)** — self-improving agent skill
+🤖 **[agent-core](https://github.com/zinan92/agent-core)** — Agent 操作系统
+> `框架` · 输入: agent 配置 → 输出: 可运行的 agent 实例
+> 一个由 agent 自己造的 agent OS，提供生命周期管理、工具注册、记忆系统
+
+🧩 **[skills-repo](https://github.com/zinan92/skills-repo)** — AI Agent 技能仓库
+> `框架` · 输入: 技能名称/领域 → 输出: frontmatter 路由匹配的技能文件
+> 61 个技能，按领域分组（交易/内容/开发/分析），支持 Claude Code / OpenClaw
+
+🔭 **[proactive-explorer](https://github.com/zinan92/proactive-explorer)** — 产品方向探测器
+> `框架` · 输入: GitHub repo URL → 输出: 5 维竞品分析 + 优先级排序的产品方向
+> 帮 v1 项目找到下一步该造什么，竞品分析 + 社区信号 + 机会评估
+
+#### 🔧 自动化
+
+🍴 **[bb-browser](https://github.com/zinan92/bb-browser)** — 浏览器即 API
+> `自动化` · 输入: 自然语言指令 → 输出: 浏览器操作结果
+> CLI + MCP 服务器，让 AI agent 操控 Chrome，网页数据提取
+
+🍴 **[opencli](https://github.com/zinan92/opencli)** — 网站变 CLI
+> `自动化` · 输入: 网站 URL + 操作意图 → 输出: 提取的数据/操作结果
+> AI 原生浏览器自动化，把任何网站变成命令行工具
+
+🍴 **[agent-browser](https://github.com/zinan92/agent-browser)** — Agent 浏览器自动化
+> `自动化` · 输入: 页面快照 + 操作指令 → 输出: 交互结果 + 截图
+> 快照驱动的浏览器自动化 CLI，配合 dev server 测试和 E2E 验证
+
+#### 🔌 增强
+
+🍴 **[lossless-claw](https://github.com/zinan92/lossless-claw)** — 无损上下文管理
+> `增强` · 输入: OpenClaw 会话 → 输出: 压缩前自动保存的上下文快照
+> OpenClaw 插件，防止上下文压缩丢失关键信息
+
+🍴 **[skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter)** — 技能质量检查
+> `增强` · 输入: 技能文件 → 输出: 质量评分 + 改进建议
+> 自动检查技能的 frontmatter、触发条件、模板规范
+
+🍴 **[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)** — 自我进化 Agent
+> `增强` · 输入: agent 运行日志 → 输出: 优化后的 agent 配置
+> 分析执行历史，自动调优 agent 行为和提示词
 
 ---
 
-## activity
+## 活跃度
 
 ![GitHub Contribution Graph](https://ghchart.rshah.org/zinan92)
 
@@ -78,9 +148,9 @@
 
 ## 冷知识
 
-All my repos are either for making money or saving time. Usually both.
+我所有的 repo 要么是为了赚钱，要么是为了省时间。通常两个都是。
 
 ```
-market trend:  ████████████████▄▄  📈
-my sleep:      ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  📉
+行情走势:  ████████████████▄▄  📈
+我的睡眠:  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  📉
 ```
