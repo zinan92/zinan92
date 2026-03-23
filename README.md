@@ -36,7 +36,7 @@
 
 🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)** — multi-platform crawler for XHS, Douyin, Kuaishou, Bilibili, Weibo. login, search, comments, IP proxy pool
 
-🍴 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — batch Douyin downloader with dedup, retries, and browser fallback
+📥 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — Douyin content pipeline: download → transcribe → archive → analyze. local Whisper, Markdown output, structured JSON
 
 🍴 **[mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)** — easy voice generation skill for OpenClaw
 
