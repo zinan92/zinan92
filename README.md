@@ -70,9 +70,25 @@
 > `生产` · 输入: 一段录像 → 输出: 剪辑视频 + 字幕 + 文章 + 卡片 + 8 平台发布稿
 > 一个命令 7 阶段：录制 → 剪辑 → 内容生成 → 卡片 → manifest → 发布。Web Dashboard 管理
 
+🍴 **[text-to-image-prompt-optimizer](https://github.com/manzxiao/text-to-image-prompt-optimizer)** — 全平台图片 Prompt 优化器
+> `生产` · 输入: 中文/英文产品描述 → 输出: 2-3 个风格变体 Prompt（Midjourney/Flux/DALL-E/Stable Diffusion/Gemini）
+> 万能入口，把任何描述变成各平台最优图片 Prompt，中英双语输出。**vs midjourney-replicate-flux**: 这个覆盖全平台通用场景，后者专精产品摄影
+
+🍴 **[midjourney-replicate-flux](https://github.com/rawveg/skillsforge-marketplace)** — 产品摄影 Prompt + 出图
+> `生产` · 输入: 产品描述/场景需求 → 输出: 5 层结构化 Prompt（主体→风格→光影→技术→艺术参考）+ 可选直接调 Replicate API 出图
+> 有产品摄影模板（白底电商图、生活场景等），适合翡翠/珠宝等实物拍摄场景。**vs text-to-image-prompt-optimizer**: 这个专精产品摄影可直接出图，前者是全平台通用优化
+
 🎬 **[seedance-expert](https://github.com/zinan92/seedance-expert)** — 即梦 2.0 AI 导演
 > `生产` · 输入: 文字描述/参考图片 → 输出: 即梦 2.0 视频生成提示词
-> Claude Code 技能，10 种任务类型（文生视频/图生视频/延展/编辑等），50+ 提示词模板
+> Claude Code 技能，10 种任务类型（文生视频/图生视频/延展/编辑等），50+ 提示词模板。**vs seedance-2.0-prompter**: 这个是全功能导演工具覆盖 10 种任务，后者专注单条 Prompt 的结构化 JSON 输出
+
+🍴 **[seedance-2.0-prompter](https://github.com/pexoai/pexo-skills)** — Seedance 2.0 结构化 Prompt 生成
+> `生产` · 输入: 视频创意描述 → 输出: 结构化 JSON（prompt + 参数），可直接丢进 Seedance 2.0
+> 专注 Prompt 工程，支持多素材引用，输出 JSON 格式即用即走。**vs seedance-expert**: 这个输出结构化 JSON 适合自动化管线，前者是交互式全功能导演
+
+🍴 **[seedance-storyboard](https://github.com/elementsix/elementsix-skills)** — Seedance 分镜脚本生成
+> `生产` · 输入: 故事/创意大纲 → 输出: 多段分镜脚本 + 每段对应的 Seedance Prompt
+> 适合多段短视频制作，把一个故事拆成分镜，每个镜头自动生成 Prompt
 
 🧪 **[AI-videos](https://github.com/zinan92/AI-videos)** — 虚拟角色视频管线
 > `生产` · 输入: 人物照片 + 动作参考 → 输出: 换装/动作迁移后的 AI 视频
