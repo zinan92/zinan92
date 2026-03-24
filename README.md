@@ -130,13 +130,13 @@
 
 🍴🔖 [skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter) — AI Agent 技能质量检查器，自动评估触发准确率 + 输出质量
 
-### 产品试用
+### 产品评测
 
-Fork → 部署 → 测试 → 记录真实结果。
+Fork → 部署 → 逐条验证 README 承诺 → 记录真实结果与证据。
 
-这里的 repo 都是我正在评估的工具和 skills。每个都会重写 README 记录试用结果，原文档移到附录。命名规范：`trial_项目名`。
+这里的 repo 都是我实际部署并评估过的工具和 skills。每个都会重写 README：上半部分是 claim-by-claim 的评测结论，下半部分保留原始 README 作为对照。命名规范：`eval__项目名`。
 
-*(暂无 — 第一个试用即将开始)*
+[eval__MoneyPrinterV2](https://github.com/zinan92/eval__MoneyPrinterV2) — 自动化内容赚钱工具（23k⭐），已完成 C1 预评估：依赖可安装，但 README 启动路径当前被 runtime import error 阻塞
 
 ---
 
