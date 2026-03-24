@@ -85,13 +85,13 @@
 **[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)**<br>
 <sub>小红书媒体提取 · 10k⭐</sub>
 
-**[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)**<br>
+🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)**<br>
 <sub>多平台主动爬虫 · 5 大平台</sub>
 
 🍴 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)**<br>
 <sub>抖音下载 + Whisper 转录</sub>
 
-**[wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter)**<br>
+🍴 **[wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter)**<br>
 <sub>微信公号批量下载 · 8k⭐</sub>
 
 ---
@@ -201,10 +201,10 @@
 
 **在用**
 
-**[get-shit-done](https://github.com/gsd-build/get-shit-done)**<br>
+🍴 **[get-shit-done](https://github.com/gsd-build/get-shit-done)**<br>
 <sub>GSD 开发框架 · 自主规划→执行→验证</sub>
 
-**[superpowers](https://github.com/obra/superpowers)**<br>
+🍴 **[superpowers](https://github.com/obra/superpowers)**<br>
 <sub>AI 编程工作流 · 7 阶段方法论 + TDD</sub>
 
 **[proactive-explorer](https://github.com/zinan92/proactive-explorer)**<br>
@@ -220,10 +220,10 @@
 [deer-flow](https://github.com/bytedance/deer-flow)<br>
 <sub>字节 SuperAgent · 研究/编码/创作 · 40k⭐</sub>
 
-🍴 [agent-core](https://github.com/zinan92/agent-core)<br>
+[agent-core](https://github.com/zinan92/agent-core)<br>
 <sub>Agent 操作系统 · 生命周期 + 工具 + 记忆</sub>
 
-🍴 [skills-repo](https://github.com/zinan92/skills-repo)<br>
+[skills-repo](https://github.com/zinan92/skills-repo)<br>
 <sub>61 个 AI Agent 技能 · 按领域分组</sub>
 
 </details>
@@ -239,7 +239,7 @@
 🍴 **[agent-browser](https://github.com/zinan92/agent-browser)**<br>
 <sub>快照驱动浏览器自动化</sub>
 
-**[web-access](https://github.com/eze-is/web-access)**<br>
+🍴 **[web-access](https://github.com/eze-is/web-access)**<br>
 <sub>Claude Code 完整联网 · 三层通道</sub>
 
 ---
@@ -249,7 +249,7 @@
 
 <br>
 
-[CLI-Anything](https://github.com/HKUDS/CLI-Anything)<br>
+🍴 [CLI-Anything](https://github.com/HKUDS/CLI-Anything)<br>
 <sub>任何软件一键生成 CLI</sub>
 
 🍴 [opencli](https://github.com/zinan92/opencli)<br>
