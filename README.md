@@ -20,14 +20,25 @@
 
 `数据采集` ➜ `分析` ➜ `决策`
 
+#### 数据采集
+
 **[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)** — A股/美股/期货 → 标准化 SQLite + FastAPI
 
 **[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)** — 10+ 信息源 → 事件聚类 + AI 叙事 + 影响评分
+
+#### 分析
 
 <details>
 <summary><b>备选</b></summary>
 
 [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) — LLM 每日研判 · GitHub Actions 零成本运行
+
+</details>
+
+#### 决策
+
+<details>
+<summary><b>备选</b></summary>
 
 [trading-copilot](https://github.com/zinan92/trading-skills-catalog) — 44 套方法论 · MiniMax/Anthropic 双引擎
 
@@ -37,6 +48,8 @@
 
 `收集` ➜ `分析` ➜ `生产`
 
+#### 收集
+
 **[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)** — 小红书媒体提取 · 10k⭐
 
 🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)** — 多平台主动爬虫 · 5 大平台
@@ -45,14 +58,8 @@
 
 🍴 **[wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter)** — 微信公号批量下载 · 8k⭐
 
-**[intelligence](https://github.com/zinan92/intelligence)** — 多品类研究引擎 · JSONL → 评分 + 报告
-
-**[videocut](https://github.com/zinan92/videocut)** — 口播内容工厂 · 一键 7 阶段
-
 <details>
-<summary><b>备选 (15)</b></summary>
-
-**收集**
+<summary><b>备选</b></summary>
 
 [res-downloader](https://github.com/putyy/res-downloader) — 被动资源嗅探 · 无需登录
 
@@ -60,7 +67,18 @@
 
 [RedBox](https://github.com/Jamailar/RedBox) — 小红书创作工作台
 
-**视频**
+</details>
+
+#### 分析
+
+**[intelligence](https://github.com/zinan92/intelligence)** — 多品类研究引擎 · JSONL → 评分 + 报告
+
+#### 生产 · 视频
+
+**[videocut](https://github.com/zinan92/videocut)** — 口播内容工厂 · 一键 7 阶段
+
+<details>
+<summary><b>备选</b></summary>
 
 [seedance-expert](https://github.com/zinan92/seedance-expert) — 即梦 2.0 AI 导演
 
@@ -80,7 +98,12 @@
 
 🍴 [libtv-skills](https://github.com/libtv-labs/libtv-skills) — LibLib.tv AIGC 平台发布
 
-**图**
+</details>
+
+#### 生产 · 图
+
+<details>
+<summary><b>备选</b></summary>
 
 [text-to-image-prompt-optimizer](https://github.com/manzxiao/text-to-image-prompt-optimizer) — 全平台图片 Prompt 优化
 
@@ -94,24 +117,16 @@
 
 `框架` ➜ `自动化` ➜ `增强`
 
+#### 框架
+
 🍴 **[get-shit-done](https://github.com/gsd-build/get-shit-done)** — GSD 开发框架 · 自主规划→执行→验证
 
 🍴 **[superpowers](https://github.com/obra/superpowers)** — AI 编程工作流 · 7 阶段方法论 + TDD
 
 **[proactive-explorer](https://github.com/zinan92/proactive-explorer)** — 产品方向探测 · 竞品分析 + 机会评估
 
-🍴 **[bb-browser](https://github.com/zinan92/bb-browser)** — 浏览器即 API · CLI + MCP
-
-🍴 **[agent-browser](https://github.com/zinan92/agent-browser)** — 快照驱动浏览器自动化
-
-🍴 **[web-access](https://github.com/eze-is/web-access)** — Claude Code 完整联网 · 三层通道
-
-🍴 **[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)** — 自我进化 Agent · 自动调优
-
 <details>
-<summary><b>备选 (7)</b></summary>
-
-**框架**
+<summary><b>备选</b></summary>
 
 [deer-flow](https://github.com/bytedance/deer-flow) — 字节 SuperAgent · 研究/编码/创作 · 40k⭐
 
@@ -119,13 +134,31 @@
 
 [skills-repo](https://github.com/zinan92/skills-repo) — 61 个 AI Agent 技能 · 按领域分组
 
-**自动化**
+</details>
+
+#### 自动化
+
+🍴 **[bb-browser](https://github.com/zinan92/bb-browser)** — 浏览器即 API · CLI + MCP
+
+🍴 **[agent-browser](https://github.com/zinan92/agent-browser)** — 快照驱动浏览器自动化
+
+🍴 **[web-access](https://github.com/eze-is/web-access)** — Claude Code 完整联网 · 三层通道
+
+<details>
+<summary><b>备选</b></summary>
 
 🍴 [CLI-Anything](https://github.com/HKUDS/CLI-Anything) — 任何软件一键生成 CLI
 
 🍴 [opencli](https://github.com/zinan92/opencli) — 网站变 CLI · AI 浏览器自动化
 
-**增强**
+</details>
+
+#### 增强
+
+🍴 **[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)** — 自我进化 Agent · 自动调优
+
+<details>
+<summary><b>备选</b></summary>
 
 🍴 [lossless-claw](https://github.com/zinan92/lossless-claw) — 无损上下文管理
 
