@@ -3,7 +3,7 @@
 > 我自动化交易，自动化写代码，自动化做视频。
 > 正在研究怎么自动化睡觉。
 
-📍 上海
+上海
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -18,18 +18,18 @@
 
 ### 交易
 
-<p align="center"><code>📊 数据采集</code> ➜ <code>🔍 分析</code> ➜ <code>📈 决策</code></p>
+<p align="center"><code>数据采集</code> ➜ <code>分析</code> ➜ <code>决策</code></p>
 
 <table width="100%">
 <tr>
-<th align="center">📊 数据采集</th>
-<th align="center">🔍 分析</th>
-<th align="center">📈 决策</th>
+<th align="center">数据采集</th>
+<th align="center">分析</th>
+<th align="center">决策</th>
 </tr>
 <tr>
 <td valign="top" width="34%">
 
-**✅ 在用**
+**在用**
 
 **[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)**<br>
 <sub>A股/美股/期货 → 标准化 SQLite + FastAPI</sub>
@@ -40,8 +40,8 @@
 </td>
 <td valign="top" width="33%">
 
-<details open>
-<summary><b>🔜 备选</b></summary>
+<details>
+<summary><b>备选</b></summary>
 
 <br>
 
@@ -53,8 +53,8 @@
 </td>
 <td valign="top" width="33%">
 
-<details open>
-<summary><b>🔜 备选</b></summary>
+<details>
+<summary><b>备选</b></summary>
 
 <br>
 
@@ -69,18 +69,18 @@
 
 ### 内容
 
-<p align="center"><code>📥 收集</code> ➜ <code>🔍 分析</code> ➜ <code>✨ 生产</code></p>
+<p align="center"><code>收集</code> ➜ <code>分析</code> ➜ <code>生产</code></p>
 
 <table width="100%">
 <tr>
-<th align="center">📥 收集</th>
-<th align="center">🔍 分析</th>
-<th align="center">✨ 生产</th>
+<th align="center">收集</th>
+<th align="center">分析</th>
+<th align="center">生产</th>
 </tr>
 <tr>
 <td valign="top" width="33%">
 
-**✅ 在用**
+**在用**
 
 **[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)**<br>
 <sub>小红书媒体提取 · 10k⭐</sub>
@@ -88,7 +88,7 @@
 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)**<br>
 <sub>多平台主动爬虫 · 5 大平台</sub>
 
-**[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)**<br>
+🍴 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)**<br>
 <sub>抖音下载 + Whisper 转录</sub>
 
 **[wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter)**<br>
@@ -96,8 +96,8 @@
 
 ---
 
-<details open>
-<summary><b>🔜 备选 (3)</b></summary>
+<details>
+<summary><b>备选 (3)</b></summary>
 
 <br>
 
@@ -115,7 +115,7 @@
 </td>
 <td valign="top" width="33%">
 
-**✅ 在用**
+**在用**
 
 **[intelligence](https://github.com/zinan92/intelligence)**<br>
 <sub>多品类研究引擎 · JSONL → 评分 + 报告</sub>
@@ -123,13 +123,13 @@
 </td>
 <td valign="top" width="33%">
 
-**🎬 视频**
+**视频**
 
-**✅** **[videocut](https://github.com/zinan92/videocut)**<br>
+**[videocut](https://github.com/zinan92/videocut)**<br>
 <sub>口播内容工厂 · 一键 7 阶段</sub>
 
-<details open>
-<summary><b>🔜 备选 (9)</b></summary>
+<details>
+<summary><b>备选 (9)</b></summary>
 
 <br>
 
@@ -145,10 +145,10 @@
 [MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2)<br>
 <sub>自动化赚钱 · YouTube/Twitter 内容生成 · 23k⭐</sub>
 
-[AI-videos](https://github.com/zinan92/AI-videos)<br>
+🍴 [AI-videos](https://github.com/zinan92/AI-videos)<br>
 <sub>虚拟角色视频管线</sub>
 
-[mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)<br>
+🍴 [mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)<br>
 <sub>MiniMax 语音合成</sub>
 
 [remotion-skills](https://github.com/remotion-dev/skills)<br>
@@ -157,17 +157,17 @@
 [gsap-skills](https://github.com/greensock/gsap-skills)<br>
 <sub>GSAP 官方动画技能包</sub>
 
-[libtv-skills](https://github.com/libtv-labs/libtv-skills)<br>
+🍴 [libtv-skills](https://github.com/libtv-labs/libtv-skills)<br>
 <sub>LibLib.tv AIGC 平台发布</sub>
 
 </details>
 
 ---
 
-**🖼️ 图**
+**图**
 
-<details open>
-<summary><b>🔜 备选</b></summary>
+<details>
+<summary><b>备选</b></summary>
 
 <br>
 
@@ -177,7 +177,7 @@
 [midjourney-replicate-flux](https://github.com/rawveg/skillsforge-marketplace)<br>
 <sub>产品摄影 Prompt + 出图</sub>
 
-[frontend-slides](https://github.com/zarazhangrui/frontend-slides)<br>
+🍴 [frontend-slides](https://github.com/zarazhangrui/frontend-slides)<br>
 <sub>动画演示文稿生成</sub>
 
 </details>
@@ -188,18 +188,18 @@
 
 ### 开发工具
 
-<p align="center"><code>🏗️ 框架</code> ➜ <code>🔧 自动化</code> ➜ <code>🔌 增强</code></p>
+<p align="center"><code>框架</code> ➜ <code>自动化</code> ➜ <code>增强</code></p>
 
 <table width="100%">
 <tr>
-<th align="center">🏗️ 框架</th>
-<th align="center">🔧 自动化</th>
-<th align="center">🔌 增强</th>
+<th align="center">框架</th>
+<th align="center">自动化</th>
+<th align="center">增强</th>
 </tr>
 <tr>
 <td valign="top" width="34%">
 
-**✅ 在用**
+**在用**
 
 **[get-shit-done](https://github.com/gsd-build/get-shit-done)**<br>
 <sub>GSD 开发框架 · 自主规划→执行→验证</sub>
@@ -212,18 +212,18 @@
 
 ---
 
-<details open>
-<summary><b>🔜 备选 (3)</b></summary>
+<details>
+<summary><b>备选 (3)</b></summary>
 
 <br>
 
 [deer-flow](https://github.com/bytedance/deer-flow)<br>
 <sub>字节 SuperAgent · 研究/编码/创作 · 40k⭐</sub>
 
-[agent-core](https://github.com/zinan92/agent-core)<br>
+🍴 [agent-core](https://github.com/zinan92/agent-core)<br>
 <sub>Agent 操作系统 · 生命周期 + 工具 + 记忆</sub>
 
-[skills-repo](https://github.com/zinan92/skills-repo)<br>
+🍴 [skills-repo](https://github.com/zinan92/skills-repo)<br>
 <sub>61 个 AI Agent 技能 · 按领域分组</sub>
 
 </details>
@@ -231,12 +231,12 @@
 </td>
 <td valign="top" width="33%">
 
-**✅ 在用**
+**在用**
 
-**[bb-browser](https://github.com/zinan92/bb-browser)**<br>
+🍴 **[bb-browser](https://github.com/zinan92/bb-browser)**<br>
 <sub>浏览器即 API · CLI + MCP</sub>
 
-**[agent-browser](https://github.com/zinan92/agent-browser)**<br>
+🍴 **[agent-browser](https://github.com/zinan92/agent-browser)**<br>
 <sub>快照驱动浏览器自动化</sub>
 
 **[web-access](https://github.com/eze-is/web-access)**<br>
@@ -244,15 +244,15 @@
 
 ---
 
-<details open>
-<summary><b>🔜 备选 (2)</b></summary>
+<details>
+<summary><b>备选 (2)</b></summary>
 
 <br>
 
 [CLI-Anything](https://github.com/HKUDS/CLI-Anything)<br>
 <sub>任何软件一键生成 CLI</sub>
 
-[opencli](https://github.com/zinan92/opencli)<br>
+🍴 [opencli](https://github.com/zinan92/opencli)<br>
 <sub>网站变 CLI · AI 浏览器自动化</sub>
 
 </details>
@@ -260,22 +260,22 @@
 </td>
 <td valign="top" width="33%">
 
-**✅ 在用**
+**在用**
 
-**[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)**<br>
+🍴 **[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)**<br>
 <sub>自我进化 Agent · 自动调优</sub>
 
 ---
 
-<details open>
-<summary><b>🔜 备选 (2)</b></summary>
+<details>
+<summary><b>备选 (2)</b></summary>
 
 <br>
 
-[lossless-claw](https://github.com/zinan92/lossless-claw)<br>
+🍴 [lossless-claw](https://github.com/zinan92/lossless-claw)<br>
 <sub>无损上下文管理</sub>
 
-[skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter)<br>
+🍴 [skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter)<br>
 <sub>技能质量检查</sub>
 
 </details>
@@ -283,6 +283,14 @@
 </td>
 </tr>
 </table>
+
+### 产品试用
+
+Fork → 部署 → 测试 → 记录真实结果。
+
+这里的 repo 都是我正在评估的工具和 skills。每个都会重写 README 记录试用结果，原文档移到附录。命名规范：`trial_项目名`。
+
+*(暂无 — 第一个试用即将开始)*
 
 ---
 
