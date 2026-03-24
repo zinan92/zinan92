@@ -64,6 +64,10 @@
 > `分析` · 输入: 小红书/抖音采集数据 → 输出: 趋势报告 + 内容策略建议
 > 分析爆款规律、内容趋势、竞品动态，告诉你下一步该做什么内容
 
+🧪 **[intelligence](https://github.com/zinan92/intelligence)** — 多品类研究引擎
+> `分析` · 输入: MediaCrawler/抖音/小红书 JSONL → 输出: 归一化样本 + 加权评分 + JSON/MD/HTML 决策报告
+> 品类无关的研究框架，Project Pack 机制隔离品类逻辑。零外部依赖，纯标准库。**vs content-intelligence**: 这个是通用研究引擎可扩展任意品类，content-intelligence 聚焦内容趋势策略
+
 #### ✨ 生产
 
 ✂️ **[videocut](https://github.com/zinan92/videocut)** — 口播内容工厂
