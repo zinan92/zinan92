@@ -149,6 +149,12 @@
 [mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)<br>
 <sub>MiniMax 语音合成</sub>
 
+[remotion-skills](https://github.com/remotion-dev/skills)<br>
+<sub>Remotion 程序化视频生成</sub>
+
+[gsap-skills](https://github.com/greensock/gsap-skills)<br>
+<sub>GSAP 官方动画技能包</sub>
+
 </details>
 
 ---
@@ -168,9 +174,6 @@
 
 [frontend-slides](https://github.com/zarazhangrui/frontend-slides)<br>
 <sub>动画演示文稿生成</sub>
-
-[gsap-skills](https://github.com/greensock/gsap-skills)<br>
-<sub>GSAP 官方动画技能包</sub>
 
 </details>
 
@@ -205,6 +208,9 @@
 <td valign="top" width="34%">
 
 **✅ 在用**
+
+**[get-shit-done](https://github.com/gsd-build/get-shit-done)**<br>
+<sub>GSD 开发框架 · 自主规划→执行→验证</sub>
 
 **[superpowers](https://github.com/obra/superpowers)**<br>
 <sub>AI 编程工作流 · 7 阶段方法论 + TDD</sub>
