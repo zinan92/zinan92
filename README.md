@@ -16,52 +16,50 @@
 
 ## 在造的东西
 
-### 交易 `数据采集 → 分析 → 决策`
+### 交易
 
-<table>
+<p align="center"><code>📊 数据采集</code> ➜ <code>🔍 分析</code> ➜ <code>📈 决策</code></p>
+
+<table width="100%">
 <tr>
 <th align="center">📊 数据采集</th>
-<th align="center">➜</th>
 <th align="center">🔍 分析</th>
-<th align="center">➜</th>
 <th align="center">📈 决策</th>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" width="34%">
 
 **✅ 在用**
 
 **[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)**<br>
-<sub>A股/美股/期货行情 → 标准化 SQLite + FastAPI 查询</sub>
+<sub>A股/美股/期货 → 标准化 SQLite + FastAPI</sub>
 
 **[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)**<br>
-<sub>10+ 信息源 → 事件聚类 + AI 叙事 + 标的影响评分</sub>
+<sub>10+ 信息源 → 事件聚类 + AI 叙事 + 影响评分</sub>
 
 </td>
-<td align="center" valign="middle">➜</td>
-<td valign="top">
+<td valign="top" width="33%">
 
-<details>
+<details open>
 <summary><b>🔜 备选</b></summary>
 
 <br>
 
 [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)<br>
-<sub>LLM 每日研判 + GitHub Actions 零成本</sub>
+<sub>LLM 每日研判 · GitHub Actions 零成本运行</sub>
 
 </details>
 
 </td>
-<td align="center" valign="middle">➜</td>
-<td valign="top">
+<td valign="top" width="33%">
 
-<details>
+<details open>
 <summary><b>🔜 备选</b></summary>
 
 <br>
 
 [trading-copilot](https://github.com/zinan92/trading-skills-catalog)<br>
-<sub>44 套方法论 + MiniMax/Anthropic 双引擎</sub>
+<sub>44 套方法论 · MiniMax/Anthropic 双引擎</sub>
 
 </details>
 
@@ -69,20 +67,19 @@
 </tr>
 </table>
 
-### 内容 `收集 → 分析 → 生产 → 分发`
+### 内容
 
-<table>
+<p align="center"><code>📥 收集</code> ➜ <code>🔍 分析</code> ➜ <code>✨ 生产</code> ➜ <code>🚀 分发</code></p>
+
+<table width="100%">
 <tr>
 <th align="center">📥 收集</th>
-<th align="center">➜</th>
 <th align="center">🔍 分析</th>
-<th align="center">➜</th>
 <th align="center">✨ 生产</th>
-<th align="center">➜</th>
 <th align="center">🚀 分发</th>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" width="25%">
 
 **✅ 在用**
 
@@ -90,7 +87,7 @@
 <sub>小红书媒体提取 · 10k⭐</sub>
 
 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)**<br>
-<sub>多平台主动爬虫 · 小红书/抖音/快手/B站/微博</sub>
+<sub>多平台主动爬虫 · 5 大平台</sub>
 
 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)**<br>
 <sub>抖音下载 + Whisper 转录</sub>
@@ -100,7 +97,7 @@
 
 ---
 
-<details>
+<details open>
 <summary><b>🔜 备选 (3)</b></summary>
 
 <br>
@@ -112,37 +109,33 @@
 <sub>通用爬虫框架 · 自适应解析</sub>
 
 [RedBox](https://github.com/Jamailar/RedBox)<br>
-<sub>小红书创作工作台 · 采集→创作→发布</sub>
+<sub>小红书创作工作台</sub>
 
 </details>
 
 </td>
-<td align="center" valign="middle">➜</td>
-<td valign="top">
+<td valign="top" width="25%">
 
 **✅ 在用**
 
 **[intelligence](https://github.com/zinan92/intelligence)**<br>
-<sub>多品类研究引擎 · JSONL → 归一化 + 评分 + 报告</sub>
+<sub>多品类研究引擎 · JSONL → 评分 + 报告</sub>
 
 </td>
-<td align="center" valign="middle">➜</td>
-<td valign="top">
+<td valign="top" width="25%">
 
-**✅ 在用**
+**🎬 视频**
 
-**[videocut](https://github.com/zinan92/videocut)**<br>
-<sub>口播内容工厂 · 录制→剪辑→卡片→发布</sub>
+**✅** **[videocut](https://github.com/zinan92/videocut)**<br>
+<sub>口播内容工厂 · 一键 7 阶段</sub>
 
----
-
-<details>
-<summary><b>🔜 备选 (9)</b></summary>
+<details open>
+<summary><b>🔜 备选</b></summary>
 
 <br>
 
 [seedance-expert](https://github.com/zinan92/seedance-expert)<br>
-<sub>即梦 2.0 AI 导演 · 10 种任务</sub>
+<sub>即梦 2.0 AI 导演</sub>
 
 [seedance-2.0-prompter](https://github.com/pexoai/pexo-skills)<br>
 <sub>Seedance 结构化 Prompt</sub>
@@ -150,17 +143,28 @@
 [seedance-storyboard](https://github.com/elementsix/elementsix-skills)<br>
 <sub>Seedance 分镜脚本</sub>
 
-[text-to-image-prompt-optimizer](https://github.com/manzxiao/text-to-image-prompt-optimizer)<br>
-<sub>全平台图片 Prompt 优化</sub>
-
-[midjourney-replicate-flux](https://github.com/rawveg/skillsforge-marketplace)<br>
-<sub>产品摄影 Prompt + 出图</sub>
-
 [AI-videos](https://github.com/zinan92/AI-videos)<br>
 <sub>虚拟角色视频管线</sub>
 
 [mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)<br>
 <sub>MiniMax 语音合成</sub>
+
+</details>
+
+---
+
+**🖼️ 图**
+
+<details open>
+<summary><b>🔜 备选</b></summary>
+
+<br>
+
+[text-to-image-prompt-optimizer](https://github.com/manzxiao/text-to-image-prompt-optimizer)<br>
+<sub>全平台图片 Prompt 优化</sub>
+
+[midjourney-replicate-flux](https://github.com/rawveg/skillsforge-marketplace)<br>
+<sub>产品摄影 Prompt + 出图</sub>
 
 [frontend-slides](https://github.com/zarazhangrui/frontend-slides)<br>
 <sub>动画演示文稿生成</sub>
@@ -171,11 +175,10 @@
 </details>
 
 </td>
-<td align="center" valign="middle">➜</td>
-<td valign="top">
+<td valign="top" width="25%">
 
-<details>
-<summary><b>🔜 备选 (1)</b></summary>
+<details open>
+<summary><b>🔜 备选</b></summary>
 
 <br>
 
@@ -188,27 +191,30 @@
 </tr>
 </table>
 
-### 开发工具 `框架 → 自动化 → 增强`
+### 开发工具
 
-<table>
+<p align="center"><code>🏗️ 框架</code> ➜ <code>🔧 自动化</code> ➜ <code>🔌 增强</code></p>
+
+<table width="100%">
 <tr>
 <th align="center">🏗️ 框架</th>
-<th align="center">➜</th>
 <th align="center">🔧 自动化</th>
-<th align="center">➜</th>
 <th align="center">🔌 增强</th>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" width="34%">
 
 **✅ 在用**
+
+**[superpowers](https://github.com/obra/superpowers)**<br>
+<sub>AI 编程工作流 · 7 阶段方法论 + TDD</sub>
 
 **[proactive-explorer](https://github.com/zinan92/proactive-explorer)**<br>
 <sub>产品方向探测 · 竞品分析 + 机会评估</sub>
 
 ---
 
-<details>
+<details open>
 <summary><b>🔜 备选 (2)</b></summary>
 
 <br>
@@ -222,8 +228,7 @@
 </details>
 
 </td>
-<td align="center" valign="middle">➜</td>
-<td valign="top">
+<td valign="top" width="33%">
 
 **✅ 在用**
 
@@ -233,9 +238,12 @@
 **[agent-browser](https://github.com/zinan92/agent-browser)**<br>
 <sub>快照驱动浏览器自动化</sub>
 
+**[web-access](https://github.com/eze-is/web-access)**<br>
+<sub>Claude Code 完整联网 · 三层通道</sub>
+
 ---
 
-<details>
+<details open>
 <summary><b>🔜 备选 (2)</b></summary>
 
 <br>
@@ -249,23 +257,16 @@
 </details>
 
 </td>
-<td align="center" valign="middle">➜</td>
-<td valign="top">
+<td valign="top" width="33%">
 
 **✅ 在用**
-
-**[superpowers](https://github.com/obra/superpowers)**<br>
-<sub>AI 编程工作流 · 7 阶段方法论</sub>
-
-**[web-access](https://github.com/eze-is/web-access)**<br>
-<sub>Claude Code 完整联网 · 三层通道</sub>
 
 **[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)**<br>
 <sub>自我进化 Agent · 自动调优</sub>
 
 ---
 
-<details>
+<details open>
 <summary><b>🔜 备选 (2)</b></summary>
 
 <br>
