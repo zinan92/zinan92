@@ -129,7 +129,7 @@
 <sub>口播内容工厂 · 一键 7 阶段</sub>
 
 <details open>
-<summary><b>🔜 备选</b></summary>
+<summary><b>🔜 备选 (9)</b></summary>
 
 <br>
 
@@ -141,6 +141,9 @@
 
 [seedance-storyboard](https://github.com/elementsix/elementsix-skills)<br>
 <sub>Seedance 分镜脚本</sub>
+
+[MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2)<br>
+<sub>自动化赚钱 · YouTube/Twitter 内容生成 · 23k⭐</sub>
 
 [AI-videos](https://github.com/zinan92/AI-videos)<br>
 <sub>虚拟角色视频管线</sub>
@@ -210,9 +213,12 @@
 ---
 
 <details open>
-<summary><b>🔜 备选 (2)</b></summary>
+<summary><b>🔜 备选 (3)</b></summary>
 
 <br>
+
+[deer-flow](https://github.com/bytedance/deer-flow)<br>
+<sub>字节 SuperAgent · 研究/编码/创作 · 40k⭐</sub>
 
 [agent-core](https://github.com/zinan92/agent-core)<br>
 <sub>Agent 操作系统 · 生命周期 + 工具 + 记忆</sub>
