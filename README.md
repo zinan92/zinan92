@@ -69,17 +69,16 @@
 
 ### 内容
 
-<p align="center"><code>📥 收集</code> ➜ <code>🔍 分析</code> ➜ <code>✨ 生产</code> ➜ <code>🚀 分发</code></p>
+<p align="center"><code>📥 收集</code> ➜ <code>🔍 分析</code> ➜ <code>✨ 生产</code></p>
 
 <table width="100%">
 <tr>
 <th align="center">📥 收集</th>
 <th align="center">🔍 分析</th>
 <th align="center">✨ 生产</th>
-<th align="center">🚀 分发</th>
 </tr>
 <tr>
-<td valign="top" width="25%">
+<td valign="top" width="33%">
 
 **✅ 在用**
 
@@ -114,7 +113,7 @@
 </details>
 
 </td>
-<td valign="top" width="25%">
+<td valign="top" width="33%">
 
 **✅ 在用**
 
@@ -122,7 +121,7 @@
 <sub>多品类研究引擎 · JSONL → 评分 + 报告</sub>
 
 </td>
-<td valign="top" width="25%">
+<td valign="top" width="33%">
 
 **🎬 视频**
 
@@ -155,6 +154,9 @@
 [gsap-skills](https://github.com/greensock/gsap-skills)<br>
 <sub>GSAP 官方动画技能包</sub>
 
+[libtv-skills](https://github.com/libtv-labs/libtv-skills)<br>
+<sub>LibLib.tv AIGC 平台发布</sub>
+
 </details>
 
 ---
@@ -174,19 +176,6 @@
 
 [frontend-slides](https://github.com/zarazhangrui/frontend-slides)<br>
 <sub>动画演示文稿生成</sub>
-
-</details>
-
-</td>
-<td valign="top" width="25%">
-
-<details open>
-<summary><b>🔜 备选</b></summary>
-
-<br>
-
-[libtv-skills](https://github.com/libtv-labs/libtv-skills)<br>
-<sub>LibLib.tv AIGC 平台发布</sub>
 
 </details>
 
