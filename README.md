@@ -18,271 +18,120 @@
 
 ### 交易
 
-<p align="center"><code>数据采集</code> ➜ <code>分析</code> ➜ <code>决策</code></p>
+`数据采集` ➜ `分析` ➜ `决策`
 
-<table width="100%">
-<tr>
-<th align="center">数据采集</th>
-<th align="center">分析</th>
-<th align="center">决策</th>
-</tr>
-<tr>
-<td valign="top" width="34%">
+**[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)** — A股/美股/期货 → 标准化 SQLite + FastAPI
 
-**在用**
-
-**[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)**<br>
-<sub>A股/美股/期货 → 标准化 SQLite + FastAPI</sub>
-
-**[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)**<br>
-<sub>10+ 信息源 → 事件聚类 + AI 叙事 + 影响评分</sub>
-
-</td>
-<td valign="top" width="33%">
+**[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)** — 10+ 信息源 → 事件聚类 + AI 叙事 + 影响评分
 
 <details>
 <summary><b>备选</b></summary>
 
-<br>
+[daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) — LLM 每日研判 · GitHub Actions 零成本运行
 
-[daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)<br>
-<sub>LLM 每日研判 · GitHub Actions 零成本运行</sub>
-
-</details>
-
-</td>
-<td valign="top" width="33%">
-
-<details>
-<summary><b>备选</b></summary>
-
-<br>
-
-[trading-copilot](https://github.com/zinan92/trading-skills-catalog)<br>
-<sub>44 套方法论 · MiniMax/Anthropic 双引擎</sub>
+[trading-copilot](https://github.com/zinan92/trading-skills-catalog) — 44 套方法论 · MiniMax/Anthropic 双引擎
 
 </details>
-
-</td>
-</tr>
-</table>
 
 ### 内容
 
-<p align="center"><code>收集</code> ➜ <code>分析</code> ➜ <code>生产</code></p>
+`收集` ➜ `分析` ➜ `生产`
 
-<table width="100%">
-<tr>
-<th align="center">收集</th>
-<th align="center">分析</th>
-<th align="center">生产</th>
-</tr>
-<tr>
-<td valign="top" width="33%">
+**[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)** — 小红书媒体提取 · 10k⭐
 
-**在用**
+🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)** — 多平台主动爬虫 · 5 大平台
 
-**[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)**<br>
-<sub>小红书媒体提取 · 10k⭐</sub>
+🍴 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — 抖音下载 + Whisper 转录
 
-🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)**<br>
-<sub>多平台主动爬虫 · 5 大平台</sub>
+🍴 **[wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter)** — 微信公号批量下载 · 8k⭐
 
-🍴 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)**<br>
-<sub>抖音下载 + Whisper 转录</sub>
+**[intelligence](https://github.com/zinan92/intelligence)** — 多品类研究引擎 · JSONL → 评分 + 报告
 
-🍴 **[wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter)**<br>
-<sub>微信公号批量下载 · 8k⭐</sub>
-
----
+**[videocut](https://github.com/zinan92/videocut)** — 口播内容工厂 · 一键 7 阶段
 
 <details>
-<summary><b>备选 (3)</b></summary>
+<summary><b>备选 (15)</b></summary>
 
-<br>
+**收集**
 
-[res-downloader](https://github.com/putyy/res-downloader)<br>
-<sub>被动资源嗅探 · 无需登录</sub>
+[res-downloader](https://github.com/putyy/res-downloader) — 被动资源嗅探 · 无需登录
 
-[Scrapling](https://github.com/D4Vinci/Scrapling)<br>
-<sub>通用爬虫框架 · 自适应解析</sub>
+[Scrapling](https://github.com/D4Vinci/Scrapling) — 通用爬虫框架 · 自适应解析
 
-[RedBox](https://github.com/Jamailar/RedBox)<br>
-<sub>小红书创作工作台</sub>
-
-</details>
-
-</td>
-<td valign="top" width="33%">
-
-**在用**
-
-**[intelligence](https://github.com/zinan92/intelligence)**<br>
-<sub>多品类研究引擎 · JSONL → 评分 + 报告</sub>
-
-</td>
-<td valign="top" width="33%">
+[RedBox](https://github.com/Jamailar/RedBox) — 小红书创作工作台
 
 **视频**
 
-**[videocut](https://github.com/zinan92/videocut)**<br>
-<sub>口播内容工厂 · 一键 7 阶段</sub>
+[seedance-expert](https://github.com/zinan92/seedance-expert) — 即梦 2.0 AI 导演
 
-<details>
-<summary><b>备选 (9)</b></summary>
+[seedance-2.0-prompter](https://github.com/pexoai/pexo-skills) — Seedance 结构化 Prompt
 
-<br>
+[seedance-storyboard](https://github.com/elementsix/elementsix-skills) — Seedance 分镜脚本
 
-[seedance-expert](https://github.com/zinan92/seedance-expert)<br>
-<sub>即梦 2.0 AI 导演</sub>
+[MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) — 自动化赚钱 · YouTube/Twitter 内容生成 · 23k⭐
 
-[seedance-2.0-prompter](https://github.com/pexoai/pexo-skills)<br>
-<sub>Seedance 结构化 Prompt</sub>
+🍴 [AI-videos](https://github.com/zinan92/AI-videos) — 虚拟角色视频管线
 
-[seedance-storyboard](https://github.com/elementsix/elementsix-skills)<br>
-<sub>Seedance 分镜脚本</sub>
+🍴 [mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice) — MiniMax 语音合成
 
-[MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2)<br>
-<sub>自动化赚钱 · YouTube/Twitter 内容生成 · 23k⭐</sub>
+[remotion-skills](https://github.com/remotion-dev/skills) — Remotion 程序化视频生成
 
-🍴 [AI-videos](https://github.com/zinan92/AI-videos)<br>
-<sub>虚拟角色视频管线</sub>
+[gsap-skills](https://github.com/greensock/gsap-skills) — GSAP 官方动画技能包
 
-🍴 [mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice)<br>
-<sub>MiniMax 语音合成</sub>
-
-[remotion-skills](https://github.com/remotion-dev/skills)<br>
-<sub>Remotion 程序化视频生成</sub>
-
-[gsap-skills](https://github.com/greensock/gsap-skills)<br>
-<sub>GSAP 官方动画技能包</sub>
-
-🍴 [libtv-skills](https://github.com/libtv-labs/libtv-skills)<br>
-<sub>LibLib.tv AIGC 平台发布</sub>
-
-</details>
-
----
+🍴 [libtv-skills](https://github.com/libtv-labs/libtv-skills) — LibLib.tv AIGC 平台发布
 
 **图**
 
-<details>
-<summary><b>备选</b></summary>
+[text-to-image-prompt-optimizer](https://github.com/manzxiao/text-to-image-prompt-optimizer) — 全平台图片 Prompt 优化
 
-<br>
+[midjourney-replicate-flux](https://github.com/rawveg/skillsforge-marketplace) — 产品摄影 Prompt + 出图
 
-[text-to-image-prompt-optimizer](https://github.com/manzxiao/text-to-image-prompt-optimizer)<br>
-<sub>全平台图片 Prompt 优化</sub>
-
-[midjourney-replicate-flux](https://github.com/rawveg/skillsforge-marketplace)<br>
-<sub>产品摄影 Prompt + 出图</sub>
-
-🍴 [frontend-slides](https://github.com/zarazhangrui/frontend-slides)<br>
-<sub>动画演示文稿生成</sub>
+🍴 [frontend-slides](https://github.com/zarazhangrui/frontend-slides) — 动画演示文稿生成
 
 </details>
-
-</td>
-</tr>
-</table>
 
 ### 开发工具
 
-<p align="center"><code>框架</code> ➜ <code>自动化</code> ➜ <code>增强</code></p>
+`框架` ➜ `自动化` ➜ `增强`
 
-<table width="100%">
-<tr>
-<th align="center">框架</th>
-<th align="center">自动化</th>
-<th align="center">增强</th>
-</tr>
-<tr>
-<td valign="top" width="34%">
+🍴 **[get-shit-done](https://github.com/gsd-build/get-shit-done)** — GSD 开发框架 · 自主规划→执行→验证
 
-**在用**
+🍴 **[superpowers](https://github.com/obra/superpowers)** — AI 编程工作流 · 7 阶段方法论 + TDD
 
-🍴 **[get-shit-done](https://github.com/gsd-build/get-shit-done)**<br>
-<sub>GSD 开发框架 · 自主规划→执行→验证</sub>
+**[proactive-explorer](https://github.com/zinan92/proactive-explorer)** — 产品方向探测 · 竞品分析 + 机会评估
 
-🍴 **[superpowers](https://github.com/obra/superpowers)**<br>
-<sub>AI 编程工作流 · 7 阶段方法论 + TDD</sub>
+🍴 **[bb-browser](https://github.com/zinan92/bb-browser)** — 浏览器即 API · CLI + MCP
 
-**[proactive-explorer](https://github.com/zinan92/proactive-explorer)**<br>
-<sub>产品方向探测 · 竞品分析 + 机会评估</sub>
+🍴 **[agent-browser](https://github.com/zinan92/agent-browser)** — 快照驱动浏览器自动化
 
----
+🍴 **[web-access](https://github.com/eze-is/web-access)** — Claude Code 完整联网 · 三层通道
+
+🍴 **[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)** — 自我进化 Agent · 自动调优
 
 <details>
-<summary><b>备选 (3)</b></summary>
+<summary><b>备选 (7)</b></summary>
 
-<br>
+**框架**
 
-[deer-flow](https://github.com/bytedance/deer-flow)<br>
-<sub>字节 SuperAgent · 研究/编码/创作 · 40k⭐</sub>
+[deer-flow](https://github.com/bytedance/deer-flow) — 字节 SuperAgent · 研究/编码/创作 · 40k⭐
 
-[agent-core](https://github.com/zinan92/agent-core)<br>
-<sub>Agent 操作系统 · 生命周期 + 工具 + 记忆</sub>
+[agent-core](https://github.com/zinan92/agent-core) — Agent 操作系统 · 生命周期 + 工具 + 记忆
 
-[skills-repo](https://github.com/zinan92/skills-repo)<br>
-<sub>61 个 AI Agent 技能 · 按领域分组</sub>
+[skills-repo](https://github.com/zinan92/skills-repo) — 61 个 AI Agent 技能 · 按领域分组
 
-</details>
+**自动化**
 
-</td>
-<td valign="top" width="33%">
+🍴 [CLI-Anything](https://github.com/HKUDS/CLI-Anything) — 任何软件一键生成 CLI
 
-**在用**
+🍴 [opencli](https://github.com/zinan92/opencli) — 网站变 CLI · AI 浏览器自动化
 
-🍴 **[bb-browser](https://github.com/zinan92/bb-browser)**<br>
-<sub>浏览器即 API · CLI + MCP</sub>
+**增强**
 
-🍴 **[agent-browser](https://github.com/zinan92/agent-browser)**<br>
-<sub>快照驱动浏览器自动化</sub>
+🍴 [lossless-claw](https://github.com/zinan92/lossless-claw) — 无损上下文管理
 
-🍴 **[web-access](https://github.com/eze-is/web-access)**<br>
-<sub>Claude Code 完整联网 · 三层通道</sub>
-
----
-
-<details>
-<summary><b>备选 (2)</b></summary>
-
-<br>
-
-🍴 [CLI-Anything](https://github.com/HKUDS/CLI-Anything)<br>
-<sub>任何软件一键生成 CLI</sub>
-
-🍴 [opencli](https://github.com/zinan92/opencli)<br>
-<sub>网站变 CLI · AI 浏览器自动化</sub>
+🍴 [skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter) — 技能质量检查
 
 </details>
-
-</td>
-<td valign="top" width="33%">
-
-**在用**
-
-🍴 **[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)**<br>
-<sub>自我进化 Agent · 自动调优</sub>
-
----
-
-<details>
-<summary><b>备选 (2)</b></summary>
-
-<br>
-
-🍴 [lossless-claw](https://github.com/zinan92/lossless-claw)<br>
-<sub>无损上下文管理</sub>
-
-🍴 [skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter)<br>
-<sub>技能质量检查</sub>
-
-</details>
-
-</td>
-</tr>
-</table>
 
 ### 产品试用
 
