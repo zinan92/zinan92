@@ -118,6 +118,8 @@
 
 #### 框架
 
+**[doc-driven-dev-workflow](https://github.com/zinan92/doc-driven-dev-workflow)** — 5 阶段 / 22 步的文档驱动开发框架。内置 task scaffolding、workflow guards、状态机 + 本地 observer dashboard
+
 🍴 **[get-shit-done](https://github.com/gsd-build/get-shit-done)** — GSD 开发框架。AI 自主规划→执行→验证，全流程自动化
 
 🍴 **[superpowers](https://github.com/obra/superpowers)** — AI 编程工作流。7 阶段方法论 + TDD 驱动，从头脑风暴到代码审查
