@@ -42,35 +42,150 @@
 
 ### 交易
 
-`数据采集` ➜ `分析` ➜ `决策`
+> **一个世界观，交易任何资产。**
 
-#### 数据采集
+不管是 A 股、美股、加密、黄金、外汇还是债券，所有资产共享同一个宏观判断。通过多源数据融合形成统一世界观，再从世界观推导出每个资产的交易决策。
 
-**[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)** — A股/美股/期货行情数据 → 标准化 SQLite 存储 + FastAPI 查询接口
+```
+数据标准化                    融合分析                 决策与执行
 
-**[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)** — 交易信号情报系统。10+ 信息源 → 跨源事件聚类 → AI 叙事生成 → 标的价格影响评分 → 力导向星座图可视化
+Quantitative ──┐         ┌─ 信号检测 ──┐         ┌─ 策略生成
+ K线/指标/资金   │         │  异常/突破/模式 │         │  入场/止盈/止损
+ A股/美股/加密   ├── 标准化 ─┤             ├─ 世界观 ─┤
+ 商品/债券/外汇   │   接口   │  叙事生成    │   形成   │  执行连接
+Qualitative ──┘         │  跨源聚类    │         │  交易所API
+ 新闻/研报/社媒           └─ 宏观关联 ──┘         └─ 风控监控
+```
 
-#### 分析
+**现在能做到的：**
+
+- **多市场行情标准化采集** — 1900+ A 股、美股、加密、商品，28 组 API，8 数据源（[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)）
+- **多源信号情报聚合** — 10+ 信息源 → 跨源事件聚类 → AI 叙事生成 → 星座图可视化（[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)）
+- **感知信号引擎** — 价格突破、量价异常、资金流、技术形态自动检测（[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)）
+- **模拟交易** — 纸上交易、持仓跟踪、盈亏计算（[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)）
+- **44 套交易方法论对话决策**（[trading-copilot](https://github.com/zinan92/trading-skills-catalog)）
+
+**To-Do：**
+
+- [ ] **A 股端到端闭环** — 现有数据 + 感知信号 → 结构化交易建议（入场/止盈/止损）
+  📍 quant-data-pipeline · qualitative-data-pipeline
+  ✅ 给定一只股票，系统输出完整的交易计划（方向、入场价、止损、目标价、依据）
+
+- [ ] **回测验证** — 用历史数据验证交易建议的胜率
+  📍 quant-data-pipeline
+  ✅ 任意策略可跑 1 年回测，输出胜率/盈亏比/最大回撤
+
+- [ ] **实盘 API 对接** — 先接一个交易所（Alpaca 美股）
+  📍 quant-data-pipeline
+  ✅ 能通过 API 下单、查持仓、查订单状态
+
+- [ ] **风控系统** — 仓位管理 + 止损执行 + 暴露监控
+  📍 quant-data-pipeline
+  ✅ 超过预设风险阈值自动报警或拒绝下单
+
+- [ ] **美股端到端闭环** — 复制 A 股闭环到美股
+  📍 quant-data-pipeline
+  ✅ 美股也能输出完整交易计划 + 实盘执行
+
+- [ ] **加密端到端闭环** — 接币安 API，复制闭环
+  📍 quant-data-pipeline
+  ✅ 加密资产也能走完 数据→建议→执行
+
+- [ ] **资产关联图谱** — 跨资产因果关系建模
+  📍 quant-data-pipeline · qualitative-data-pipeline
+  ✅ 输入宏观事件（如"美联储加息"），输出各资产预期方向
+
+- [ ] **统一世界观引擎** — 所有资产、所有数据源融合成一份研判
+  📍 全部 trading repos
+  ✅ 一份报告覆盖股/债/汇/商品/加密的统一观点和交易建议
+
+- [ ] **外汇/债券/商品数据源补齐**
+  📍 quant-data-pipeline
+  ✅ 覆盖主要外汇对、美国国债、原油/黄金/铜
+
+- [ ] **交易日志与自动复盘** — 每笔交易归因到触发信号
+  📍 quant-data-pipeline
+  ✅ 交易记录自动关联原始信号，月度复盘报告
+
+<details>
+<summary>📦 相关项目与工具</summary>
 
 🔖 [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) — LLM 每日自动研判，GitHub Actions 零成本运行
 
-#### 决策
+</details>
 
-🔖 [trading-copilot](https://github.com/zinan92/trading-skills-catalog) — 跟 AI 说你的交易想法，它从 44 套方法论中选最合适的给你分析。免费用
+---
 
 ### 内容
 
-`收集` ➜ `分析` ➜ `生产`
+> **创作者负责思考，机器负责其他一切。**
 
-#### 收集
+从趋势洞察到内容发布，创作环节是人的判断，其他环节全部自动化。最终目标：把这套管线开放给其他创作者。
 
-**[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader)** — 小红书图文/视频批量提取 · 10k⭐
+```
+趋势洞察              人工创作              自动化后处理           分发与追踪
 
-🍴 **[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)** — 多平台主动爬虫，覆盖小红书/抖音/快手/B站/微博 5 大平台
+多平台采集 ──┐                         ┌─ 自动剪辑 ──┐
+ 小红书/抖音  │    ┌──────────┐        │  字幕/拆条   │    ┌─ 多平台发布
+ 微信/微博    ├──▶ │  你的大脑  │ ──▶   ├─ 文章生成   ├──▶ │  抖音/小红书
+ Twitter/RSS │    └──────────┘        │  卡片/封面   │    │  微信/视频号
+趋势分析 ───┘                         └─ 格式适配 ──┘    │  Twitter
+ 评分/聚类                                              └─ 效果追踪
+ 热度排名                                                  点赞/转发/评论
+```
 
-🍴 **[douyin-downloader](https://github.com/zinan92/douyin-downloader-1)** — 抖音批量下载，去重 + 重试 + 浏览器兜底 + Whisper 语音转录
+**现在能做到的：**
 
-🍴 **[wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter)** — 微信公众号文章批量导出为离线可读格式 · 8k⭐
+- **多平台内容采集** — 小红书、抖音、微信公众号批量下载 + 语音转录（[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader), [douyin-downloader](https://github.com/zinan92/douyin-downloader-1)）
+- **趋势情报分析** — 多品类内容评分、趋势聚类、结构化报告 + 交互式 Dashboard（[intelligence](https://github.com/zinan92/intelligence)）
+- **录制到发布一条龙** — 自动剪辑 → 字幕 → 文章 → 卡片 → 发布到 8 个平台（[videocut](https://github.com/zinan92/videocut)）
+
+**To-Do：**
+
+- [ ] **抖音→小红书转化** — 成品抖音视频自动生成小红书图文/切片
+  📍 videocut
+  ✅ 输入一个抖音视频，输出小红书格式的图文帖（封面+正文+标签）
+
+- [ ] **抖音→微信转化** — 成品视频自动适配微信视频号 + 公众号文章
+  📍 videocut
+  ✅ 视频号直接复制；公众号输出图文文章（含关键帧截图+文字整理）
+
+- [ ] **智能拆条** — 长视频自动识别高光片段生成 short
+  📍 videocut
+  ✅ 输入 30 分钟视频，输出 5-8 个 60 秒 short
+
+- [ ] **多平台一键分发** — 生成的内容自动发布到各平台
+  📍 videocut
+  ✅ 一个命令发布到抖音+小红书+视频号+公众号
+
+- [ ] **趋势预警推送** — 品类/话题升温时 Telegram 通知
+  📍 intelligence
+  ✅ 配置关注品类后，自动推送热度异动
+
+- [ ] **竞品内容监控** — 跟踪指定账号发布和互动趋势
+  📍 intelligence
+  ✅ 配置竞品账号列表，每周报告
+
+- [ ] **内容效果追踪** — 各平台数据自动回收
+  📍 videocut · intelligence
+  ✅ 统一 Dashboard 看各平台点赞/转发/评论
+
+- [ ] **个人风格训练** — 基于历史内容学习表达风格
+  📍 intelligence
+  ✅ 输入过往内容，输出风格指南
+
+- [ ] **商业化封装** — 管线打包为 SaaS
+  📍 新 repo
+  ✅ 其他创作者能用完整的 采集→分析→生产→分发→追踪 管线
+
+<details>
+<summary>📦 相关项目与工具</summary>
+
+**采集**
+
+🍴 [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) — 多平台主动爬虫，覆盖小红书/抖音/快手/B站/微博 5 大平台
+
+🍴 [wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter) — 微信公众号文章批量导出为离线可读格式 · 8k⭐
 
 🔖 [res-downloader](https://github.com/putyy/res-downloader) — 被动资源嗅探，无需登录即可抓取页面媒体
 
@@ -78,13 +193,7 @@
 
 🔖 [RedBox](https://github.com/Jamailar/RedBox) — 小红书创作工作台，内容管理 + 数据分析
 
-#### 分析
-
-**[intelligence](https://github.com/zinan92/intelligence)** — 多品类内容研究引擎。JSONL 输入 → 自动评分 + 结构化分析报告
-
-#### 生产 · 视频
-
-**[videocut](https://github.com/zinan92/videocut)** — 录一次，全平台发。自动剪辑 → 字幕 → 文章 → 卡片 → 发布到 8 个平台
+**生产 · 视频**
 
 🔖 [seedance-expert](https://github.com/zinan92/seedance-expert) — Claude Code 技能，让你变成即梦 2.0 导演。10 种任务类型，50+ 提示词模板
 
@@ -104,7 +213,7 @@
 
 🍴🔖 [libtv-skills](https://github.com/libtv-labs/libtv-skills) — LibLib.tv AIGC 平台技能，通过 OpenAPI 生成图片和视频
 
-#### 生产 · 图
+**生产 · 图**
 
 🔖 [text-to-image-prompt-optimizer](https://github.com/manzxiao/text-to-image-prompt-optimizer) — 全平台图片 Prompt 优化，支持 Gemini/Midjourney/SD/DALL-E
 
@@ -112,19 +221,40 @@
 
 🍴🔖 [frontend-slides](https://github.com/zarazhangrui/frontend-slides) — Claude Code 技能，从零或从 PPT 生成动画丰富的 HTML 演示文稿
 
+</details>
+
+---
+
 ### 开发工具
 
-`框架` ➜ `自动化` ➜ `增强`
+> **造东西时顺手造出的工具，自用 → 沉淀 → 开源。**
 
-#### 框架
+开发流程已标准化，Doc-Driven Workflow 驱动所有项目。
 
-**[doc-driven-dev-workflow](https://github.com/zinan92/doc-driven-dev-workflow)** — 5 阶段 / 22 步的文档驱动开发框架。内置 task scaffolding、workflow guards、状态机 + 本地 observer dashboard
+```
+开发框架              自动化工具             增强能力
 
-🍴 **[get-shit-done](https://github.com/gsd-build/get-shit-done)** — GSD 开发框架。AI 自主规划→执行→验证，全流程自动化
+[GSD]               [bb-browser]         [self-improving-agent]
+ 规划→执行→验证        浏览器即API             自我进化
+[superpowers]       [agent-browser]
+ 7阶段工作流           快照驱动自动化
+[proactive-explorer]
+ 产品方向探索
+        │                   │                     │
+        └───────── 全部服务于 Trading + Content ──────┘
+```
 
-🍴 **[superpowers](https://github.com/obra/superpowers)** — AI 编程工作流。7 阶段方法论 + TDD 驱动，从头脑风暴到代码审查
+**现在能做到的：**
 
-**[proactive-explorer](https://github.com/zinan92/proactive-explorer)** — 下一步做什么？5 维框架，帮 v1 项目找到产品方向
+- **文档驱动开发框架** — 5 阶段 / 22 步，内置 task scaffolding + workflow guards + 状态机（[doc-driven-dev-workflow](https://github.com/zinan92/doc-driven-dev-workflow)）
+- **AI 驱动全流程开发** — 规划→执行→验证自动化（[GSD](https://github.com/gsd-build/get-shit-done), [superpowers](https://github.com/obra/superpowers)）
+- **浏览器自动化** — AI Agent 控制 Chrome，快照驱动交互（[bb-browser](https://github.com/zinan92/bb-browser), [agent-browser](https://github.com/zinan92/agent-browser)）
+- **产品方向发现** — 5 维框架帮 v1 项目找下一步（[proactive-explorer](https://github.com/zinan92/proactive-explorer)）
+
+<details>
+<summary>📦 相关项目与工具</summary>
+
+**框架**
 
 🔖 [deer-flow](https://github.com/bytedance/deer-flow) — 字节跳动 SuperAgent，研究/编码/创作全能 · 40k⭐
 
@@ -132,25 +262,25 @@
 
 🔖 [skills-repo](https://github.com/zinan92/skills-repo) — 61 个 AI Agent 技能，按领域分组 + frontmatter 路由
 
-#### 自动化
+**自动化**
 
-🍴 **[bb-browser](https://github.com/zinan92/bb-browser)** — 你的浏览器就是 API。CLI + MCP server，让 AI Agent 控制 Chrome
-
-🍴 **[agent-browser](https://github.com/zinan92/agent-browser)** — 快照驱动的浏览器自动化，专为 AI Agent 设计
-
-🍴 **[web-access](https://github.com/eze-is/web-access)** — 让 Claude Code 完整联网，三层通道（搜索 + 抓取 + API）
+🍴 [web-access](https://github.com/eze-is/web-access) — 让 Claude Code 完整联网，三层通道（搜索 + 抓取 + API）
 
 🍴🔖 [CLI-Anything](https://github.com/HKUDS/CLI-Anything) — 任何软件一键生成 CLI 界面
 
 🍴🔖 [opencli](https://github.com/zinan92/opencli) — 把任何网站变成你的 CLI。AI 原生浏览器自动化 + 数据提取
 
-#### 增强
+**增强**
 
-🍴 **[self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent)** — 自我进化 Agent，运行后自动分析 + 调优自身性能
+🍴 [self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent) — 自我进化 Agent，运行后自动分析 + 调优自身性能
 
 🍴🔖 [lossless-claw](https://github.com/zinan92/lossless-claw) — 无损上下文管理插件，防止对话压缩丢信息
 
 🍴🔖 [skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter) — AI Agent 技能质量检查器，自动评估触发准确率 + 输出质量
+
+</details>
+
+---
 
 ### 产品评测
 
