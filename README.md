@@ -110,7 +110,7 @@ Qualitative ──┘         │  跨源聚类    │         │  交易所API
 <details>
 <summary>📦 相关项目与工具</summary>
 
-**[quant-dashboard](https://github.com/zinan92/quant-dashboard)** — A股量化看板。策略回测 + 行业/概念板块分析 + Streamlit 可视化
+📊 **[quant-dashboard](https://github.com/zinan92/quant-dashboard)** — A股缠论量化回测看板。分型→笔→中枢→背驰→买卖点全流程 + 组合回测 + QuantStats 绩效报告 + Bokeh 交互图
 
 🔖 [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) — LLM 每日自动研判，GitHub Actions 零成本运行
 
