@@ -203,8 +203,6 @@ Qualitative ──┘         │  跨源聚类    │         │  交易所API
 
 🔖 [seedance-storyboard](https://github.com/elementsix/elementsix-skills) — 即梦 Seedance 分镜脚本生成器
 
-🔖 [MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) — 自动化内容赚钱，YouTube/Twitter 视频批量生成 · 23k⭐
-
 🍴🔖 [AI-videos](https://github.com/zinan92/AI-videos) — 虚拟角色视频管线。Klein 换装 + Kling 动作迁移 + RunningHub 模型对比
 
 🍴🔖 [mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice) — MiniMax 语音合成技能，一句话生成自然人声
