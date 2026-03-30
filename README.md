@@ -141,6 +141,7 @@ Qualitative ──┘         │  跨源聚类    │         │  交易所API
 - **多平台内容采集** — 小红书、抖音、微信公众号批量下载 + 语音转录（[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader), [douyin-downloader](https://github.com/zinan92/douyin-downloader-1)）
 - **统一内容下载** — URL 进去，原始文件 + 平台元数据出来，adapter 架构支持 4 平台（[content-downloader](https://github.com/zinan92/content-downloader)）
 - **多模态内容提取** — 视频转录 (Whisper) + 图片 OCR (Claude vision) + 文章清洗 + 图集叙事合成 → 结构化文本 + 智能分析（[content-extractor](https://github.com/zinan92/content-extractor)）
+- **跨平台内容改写** — 抖音视频一条命令变成小红书笔记 + 微信公众号文章，adapter 架构支持双向转换（[content-rewriter](https://github.com/zinan92/content-rewriter)）
 - **趋势情报分析** — 多品类内容评分、趋势聚类、结构化报告 + 交互式 Dashboard（[intelligence](https://github.com/zinan92/intelligence)）
 - **录制到发布一条龙** — 自动剪辑 → 字幕 → 文章 → 卡片 → 发布到 8 个平台（[videocut](https://github.com/zinan92/videocut)）
 
