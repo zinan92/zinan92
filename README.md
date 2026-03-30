@@ -144,7 +144,8 @@ Qualitative ──┘         │  跨源聚类    │         │  交易所API
 - **02 内容获取** — URL 进去，原始文件 + 元数据出来。adapter 架构支持 4 平台（[content-downloader](https://github.com/zinan92/content-downloader)）
 - **03 内容理解** — 视频转录 + 图片 OCR + 文章清洗 + 图集叙事合成 → 结构化文本（[content-extractor](https://github.com/zinan92/content-extractor)）
 - **05 内容生产** — 一个改写引擎，格式是参数。抖音 → 小红书笔记 / 微信公众号文章（[content-rewriter](https://github.com/zinan92/content-rewriter)）
-- **06 成品组装（底座）** — 录制 → 剪辑 → 字幕 → 卡片 → 封面 → 8 平台文案，下一步拆出独立 capability（[videocut](https://github.com/zinan92/videocut)）
+- **06 成品组装** — 7 个独立视频编辑 CLI（剪口播/字幕/金句/拆条/封面/变速），可单独用也可串联（[videocut](https://github.com/zinan92/videocut)）
+- **00 统一入口** — 一个 CLI 聚合全部内容能力，按需安装，用到什么下什么（[content-toolkit](https://github.com/zinan92/content-toolkit)）
 
 **To-Do（按管线顺序）：**
 
@@ -156,9 +157,9 @@ Qualitative ──┘         │  跨源聚类    │         │  交易所API
   📍 新 repo
   ✅ 输入一批结构化内容 + 创作者画像，输出 ranked picks + 角度建议 + 理由
 
-- [ ] **06 重构 videocut** — 拆出 video-clipper / subtitle-burner / card-studio / content-bundler
+- [x] **06 重构 videocut** — ~~拆出独立能力~~ 已完成：7 个 CLI 能力 + pipeline 串联 + 91 tests
   📍 videocut
-  ✅ 每个子能力可独立调用，也可串联成完整管线
+  ✅ `videocut autocut` / `subtitle` / `hook` / `clip` / `cover` / `speed` / `pipeline`
 
 - [ ] **07 content-publisher** — 一个发布器，平台是 adapter
   📍 新 repo
