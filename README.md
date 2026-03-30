@@ -1,7 +1,4 @@
-# 嘿，我是 parkzz
-
-> 我自动化交易，自动化写代码，自动化做视频。
-> 正在研究怎么自动化睡觉。
+# Hey, it's Park
 
 上海
 
@@ -23,14 +20,14 @@
 每个项目都走同一条线，AI 干活，我做决策。
 
 ```
-调研 ➜ 设计 ➜ 开发 ➜ 包装 ➜ 维护
+调研 research ➜ 设计 plan/design ➜ 开发 code & review ➜ 包装 package ➜ 维护 maintain
 ```
 
-**调研** — 不凭空造。先找到最像的产品当锚点（"80% TradingView + 20% Koyfin"），截图收集 UI 参考。
+**调研** — 使用dbskill/gstack来聊清楚需求。不凭空造。先找到最像的产品当锚点（"80% TradingView + 20% Koyfin"），截图收集 UI 参考。
 
-**设计** — Brainstorm → PRD → 实现计划 → 产品原型图。原型要完全定义最终产品的样式，只是 design 不写代码。
+**设计** — Brainstorm → PRD → 实现计划 → 产品原型图。原型要完全定义最终产品的样式，只是 design 不写代码。这里要deliver prd, implementation plan, ui
 
-**开发** — 交给 Droid。Orchestrator 拆任务分发给 worker agents，编码 → review → 打回 → 重写，循环直到全部通过。
+**开发** — 交给 Droid,小的任务可以用superpowers/gsd可能会更简单。Orchestrator 拆任务分发给 worker agents，编码 → review → 打回 → 重写，循环直到全部通过。
 
 **包装** — 产品化。部署上线、CI/CD、README、Landing Page、域名绑定。能跑不等于能用。
 
