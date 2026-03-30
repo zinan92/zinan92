@@ -122,107 +122,77 @@ Qualitative ──┘         │  跨源聚类    │         │  交易所API
 
 > **创作者负责思考，机器负责其他一切。**
 
-从趋势洞察到内容发布，创作环节是人的判断，其他环节全部自动化。最终目标：把这套管线开放给其他创作者。
+终局是一条 8 步管线。每一步是一个独立 capability，定义清楚 input / output / failure，做到极致。
 
 ```
-趋势洞察              人工创作              自动化后处理           分发与追踪
+ 01 信号发现    02 内容获取    03 内容理解    04 选题决策
+ ┌──────┐    ┌──────┐    ┌──────┐    ┌──────┐
+ │signal│───▶│downl-│───▶│extra-│───▶│cura- │
+ │scanner│    │oader │    │ctor  │    │tor   │
+ └──────┘    └──────┘    └──────┘    └──────┘
+     ○           ●           ●           ○
 
-多平台采集 ──┐                         ┌─ 自动剪辑 ──┐
- 小红书/抖音  │    ┌──────────┐        │  字幕/拆条   │    ┌─ 多平台发布
- 微信/微博    ├──▶ │  你的大脑  │ ──▶   ├─ 文章生成   ├──▶ │  抖音/小红书
- Twitter/RSS │    └──────────┘        │  卡片/封面   │    │  微信/视频号
-趋势分析 ───┘                         └─ 格式适配 ──┘    │  Twitter
- 评分/聚类                                              └─ 效果追踪
- 热度排名                                                  点赞/转发/评论
+ 05 内容生产    06 成品组装    07 分发       08 反馈学习
+ ┌──────┐    ┌──────┐    ┌──────┐    ┌──────┐
+ │rewri-│───▶│asset │───▶│publi-│───▶│perfo-│
+ │ter   │    │studio│    │sher  │    │rmance│
+ └──────┘    └──────┘    └──────┘    └──────┘
+     ●           △           ○           ○
+
+ ● = 已有   △ = 有底座   ○ = 待建
 ```
 
-**现在能做到的：**
+**已有的 capability：**
 
-- **多平台内容采集** — 小红书、抖音、微信公众号批量下载 + 语音转录（[XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader), [douyin-downloader](https://github.com/zinan92/douyin-downloader-1)）
-- **统一内容下载** — URL 进去，原始文件 + 平台元数据出来，adapter 架构支持 4 平台（[content-downloader](https://github.com/zinan92/content-downloader)）
-- **多模态内容提取** — 视频转录 (Whisper) + 图片 OCR (Claude vision) + 文章清洗 + 图集叙事合成 → 结构化文本 + 智能分析（[content-extractor](https://github.com/zinan92/content-extractor)）
-- **跨平台内容改写** — 抖音视频一条命令变成小红书笔记 + 微信公众号文章，adapter 架构支持双向转换（[content-rewriter](https://github.com/zinan92/content-rewriter)）
-- **趋势情报分析** — 多品类内容评分、趋势聚类、结构化报告 + 交互式 Dashboard（[intelligence](https://github.com/zinan92/intelligence)）
-- **录制到发布一条龙** — 自动剪辑 → 字幕 → 文章 → 卡片 → 发布到 8 个平台（[videocut](https://github.com/zinan92/videocut)）
+- **02 内容获取** — URL 进去，原始文件 + 元数据出来。adapter 架构支持 4 平台（[content-downloader](https://github.com/zinan92/content-downloader)）
+- **03 内容理解** — 视频转录 + 图片 OCR + 文章清洗 + 图集叙事合成 → 结构化文本（[content-extractor](https://github.com/zinan92/content-extractor)）
+- **05 内容生产** — 一个改写引擎，格式是参数。抖音 → 小红书笔记 / 微信公众号文章（[content-rewriter](https://github.com/zinan92/content-rewriter)）
+- **06 成品组装（底座）** — 录制 → 剪辑 → 字幕 → 卡片 → 封面 → 8 平台文案，下一步拆出独立 capability（[videocut](https://github.com/zinan92/videocut)）
 
-**To-Do：**
+**To-Do（按管线顺序）：**
 
-- [ ] **抖音→小红书转化** — 成品抖音视频自动生成小红书图文/切片
-  📍 videocut
-  ✅ 输入一个抖音视频，输出小红书格式的图文帖（封面+正文+标签）
+- [ ] **01 signal-scanner** — 跨平台信号扫描 + 趋势检测
+  📍 新 repo（intelligence 能力并入）
+  ✅ 配置关注列表后，输出每日 scored signal feed
 
-- [ ] **抖音→微信转化** — 成品视频自动适配微信视频号 + 公众号文章
-  📍 videocut
-  ✅ 视频号直接复制；公众号输出图文文章（含关键帧截图+文字整理）
-
-- [ ] **智能拆条** — 长视频自动识别高光片段生成 short
-  📍 videocut
-  ✅ 输入 30 分钟视频，输出 5-8 个 60 秒 short
-
-- [ ] **多平台一键分发** — 生成的内容自动发布到各平台
-  📍 videocut
-  ✅ 一个命令发布到抖音+小红书+视频号+公众号
-
-- [ ] **趋势预警推送** — 品类/话题升温时 Telegram 通知
-  📍 intelligence
-  ✅ 配置关注品类后，自动推送热度异动
-
-- [ ] **竞品内容监控** — 跟踪指定账号发布和互动趋势
-  📍 intelligence
-  ✅ 配置竞品账号列表，每周报告
-
-- [ ] **内容效果追踪** — 各平台数据自动回收
-  📍 videocut · intelligence
-  ✅ 统一 Dashboard 看各平台点赞/转发/评论
-
-- [ ] **个人风格训练** — 基于历史内容学习表达风格
-  📍 intelligence
-  ✅ 输入过往内容，输出风格指南
-
-- [ ] **商业化封装** — 管线打包为 SaaS
+- [ ] **04 content-curator** — 从 100 条里选 3 条值得做的
   📍 新 repo
-  ✅ 其他创作者能用完整的 采集→分析→生产→分发→追踪 管线
+  ✅ 输入一批结构化内容 + 创作者画像，输出 ranked picks + 角度建议 + 理由
+
+- [ ] **06 重构 videocut** — 拆出 video-clipper / subtitle-burner / card-studio / content-bundler
+  📍 videocut
+  ✅ 每个子能力可独立调用，也可串联成完整管线
+
+- [ ] **07 content-publisher** — 一个发布器，平台是 adapter
+  📍 新 repo
+  ✅ 输入 bundle + 平台，输出 published URL + post ID
+
+- [ ] **08 performance-tracker** — 发布后追踪表现，归因到选题
+  📍 新 repo
+  ✅ 跨平台数据回收，输出 what worked / what didn't
 
 <details>
 <summary>📦 相关项目与工具</summary>
 
 **采集**
 
-🍴 [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) — 多平台主动爬虫，覆盖小红书/抖音/快手/B站/微博 5 大平台
+🍴 [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) — 多平台主动爬虫，覆盖小红书/抖音/快手/B站/微博
 
-🍴 [wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter) — 微信公众号文章批量导出为离线可读格式 · 8k⭐
+🍴 [wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter) — 微信公众号文章批量导出 · 8k⭐
 
-🔖 [res-downloader](https://github.com/putyy/res-downloader) — 被动资源嗅探，无需登录即可抓取页面媒体
+**视频生产**
 
-🔖 [Scrapling](https://github.com/D4Vinci/Scrapling) — 通用爬虫框架，自适应解析 + 反检测
+🔖 [seedance-expert](https://github.com/zinan92/seedance-expert) — 即梦 2.0 视频 prompt 技能
 
-🔖 [RedBox](https://github.com/Jamailar/RedBox) — 小红书创作工作台，内容管理 + 数据分析
+🔖 [remotion-skills](https://github.com/remotion-dev/skills) — React 程序化视频生成
 
-**生产 · 视频**
+🍴🔖 [AI-videos](https://github.com/zinan92/AI-videos) — 虚拟角色视频管线 · RunningHub 模型对比
 
-🔖 [seedance-expert](https://github.com/zinan92/seedance-expert) — Claude Code 技能，让你变成即梦 2.0 导演。10 种任务类型，50+ 提示词模板
+**图片生产**
 
-🔖 [seedance-2.0-prompter](https://github.com/pexoai/pexo-skills) — Seedance 结构化 Prompt 工程，场景/镜头/风格一键生成
+🔖 [text-to-image-prompt-optimizer](https://github.com/manzxiao/text-to-image-prompt-optimizer) — 全平台图片 Prompt 优化
 
-🔖 [seedance-storyboard](https://github.com/elementsix/elementsix-skills) — 即梦 Seedance 分镜脚本生成器
-
-🍴🔖 [AI-videos](https://github.com/zinan92/AI-videos) — 虚拟角色视频管线。Klein 换装 + Kling 动作迁移 + RunningHub 模型对比
-
-🍴🔖 [mm-easy-voice](https://github.com/openclaw/skills/tree/main/skills/blue-coconut/mm-easy-voice) — MiniMax 语音合成技能，一句话生成自然人声
-
-🔖 [remotion-skills](https://github.com/remotion-dev/skills) — Remotion 程序化视频生成，React 写视频
-
-🔖 [gsap-skills](https://github.com/greensock/gsap-skills) — GSAP 官方动画技能包，专业级 Web 动画
-
-🍴🔖 [libtv-skills](https://github.com/libtv-labs/libtv-skills) — LibLib.tv AIGC 平台技能，通过 OpenAPI 生成图片和视频
-
-**生产 · 图**
-
-🔖 [text-to-image-prompt-optimizer](https://github.com/manzxiao/text-to-image-prompt-optimizer) — 全平台图片 Prompt 优化，支持 Gemini/Midjourney/SD/DALL-E
-
-🔖 [midjourney-replicate-flux](https://github.com/rawveg/skillsforge-marketplace) — 产品摄影级 Prompt 工程 + FLUX 1.1 Pro 出图
-
-🍴🔖 [frontend-slides](https://github.com/zarazhangrui/frontend-slides) — Claude Code 技能，从零或从 PPT 生成动画丰富的 HTML 演示文稿
+🔖 [midjourney-replicate-flux](https://github.com/rawveg/skillsforge-marketplace) — FLUX 1.1 Pro 产品摄影级出图
 
 </details>
 
