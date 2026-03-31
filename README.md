@@ -20,18 +20,18 @@
 build stuff最重要的就是定goal和success criteria，然后拆解到每一个可以被review/test的atomic unit.
 
 ```
-调研 research ➜ 设计 plan/design ➜ 开发 code & review ➜ 包装 package ➜ 维护 maintain
+调研 research ➜ 设计 plan/design ➜ 开发 code & review ➜ 包装 package ➜ 维护 maintain （后面这两个我不太熟悉，还需要学习）
 ```
 
-**调研** — 使用dbskill/gstack来聊清楚需求。不凭空造。先找到最像的产品当锚点（"80% TradingView + 20% Koyfin"），截图收集 UI 参考。
+**调研** — 使用dbskill/gstack来聊清楚需求。不凭空造。先找到最像的产品当锚点（"80% TradingView + 20% Koyfin"），截图收集 UI 参考。更高维度的需求和分析可以用naval google来聊：https://gemini.google.com/gem/aafc1ff1539f/5ef401e610e971c5 
 
-**设计** — superpowers/Brainstorm → PRD → 实现计划 → 产品原型图。原型要完全定义最终产品的样式，只是 design 不写代码。这里要deliver prd, implementation plan, ui
+**设计** — superpowers/Brainstorm → PRD → 实现计划 → 产品原型图。原型要完全定义最终产品的样式，只是 design 不写代码。这里要deliver prd, implementation plan, ui（现在ui设计还是有点missing）
 
-**开发** — 交给 Droid,小的任务可以用superpowers/gsd可能会更简单。Orchestrator 拆任务分发给 worker agents，编码 → review → 打回 → 重写，循环直到全部通过。/codex可以在cc里面直接review代码。
+**开发** — gsd开发。编码 → review → 打回 → 重写，循环直到全部通过。/codex可以在cc里面直接review代码。
 
-**包装** — 产品化。部署上线、CI/CD、README、Landing Page、域名绑定。能跑不等于能用。
+**包装** — 产品化。部署上线、CI/CD、README、Landing Page、域名绑定。能跑不等于能用。（现在只有gh readme一个skill改readme，部署，cicd，域名这些都是每次直接做，后期需要固定skill或者流程）
 
-**维护** — 监控告警、用户反馈、迭代优化。能用不等于能卖。
+**维护** — 监控告警、用户反馈、迭代优化。（现在没有这方面的流程）
 
 ---
 
