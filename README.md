@@ -41,73 +41,56 @@
 
 > **一个世界观，交易任何资产。**
 
-不管是 A 股、美股、加密、黄金、外汇还是债券，所有资产共享同一个宏观判断。通过多源数据融合形成统一世界观，再从世界观推导出每个资产的交易决策。
+8 步管线。每一步是一个独立 capability，定义清楚 input / output。GitHub 上的编号是组织结构，运行时是事件驱动。
 
 ```
-数据标准化                    融合分析                 决策与执行
+ 01 行情数据    02 情报采集    03 信号合成    04 方法论路由
+ ┌──────┐    ┌──────┐    ┌──────┐    ┌──────┐
+ │kline │───▶│intel │───▶│signal│───▶│copil-│
+ │      │    │      │    │      │    │ot    │
+ └──────┘    └──────┘    └──────┘    └──────┘
+     ●           ●           ◐           ●
 
-Quantitative ──┐         ┌─ 信号检测 ──┐         ┌─ 策略生成
- K线/指标/资金   │         │  异常/突破/模式 │         │  入场/止盈/止损
- A股/美股/加密   ├── 标准化 ─┤             ├─ 世界观 ─┤
- 商品/债券/外汇   │   接口   │  叙事生成    │   形成   │  执行连接
-Qualitative ──┘         │  跨源聚类    │         │  交易所API
- 新闻/研报/社媒           └─ 宏观关联 ──┘         └─ 风控监控
+ 05 回测验证    06 风控决策    07 执行引擎    08 复盘学习
+ ┌──────┐    ┌──────┐    ┌──────┐    ┌──────┐
+ │back- │    │risk  │───▶│execu-│───▶│journ-│
+ │test  │    │      │    │tor   │    │al    │
+ └──────┘    └──────┘    └──────┘    └──────┘
+     ●           ◐           ◐           ◐
+
+ ● = 已有   ◐ = 有代码种子(tradinghouse)   ○ = 待建
 ```
 
-**现在能做到的：**
+**已有的 capability：**
 
-- **多市场行情标准化采集** — 1900+ A 股、美股、加密、商品，28 组 API，8 数据源（[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)）
-- **多源信号情报聚合** — 10+ 信息源 → 跨源事件聚类 → AI 叙事生成 → 星座图可视化（[qualitative-data-pipeline](https://github.com/zinan92/qualitative-data-pipeline)）
-- **感知信号引擎** — 价格突破、量价异常、资金流、技术形态自动检测（[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)）
-- **模拟交易** — 纸上交易、持仓跟踪、盈亏计算（[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)）
-- **44 套交易方法论对话决策**（[trading-copilot](https://github.com/zinan92/trading-skills-catalog)）
+- **01 行情数据** — in ticker+timeframe → out OHLCV candles。A股/美股/加密/商品（[kline](https://github.com/zinan92/kline)）
+- **02 情报采集** — in 10+ 信息源 → out LLM 评分 + 跨源事件聚类（[intel](https://github.com/zinan92/intel)）
+- **03 信号合成** — in OHLCV + 事件 → out 归一化交易信号（[signal](https://github.com/zinan92/signal)）
+- **04 方法论路由** — in 信号 + 上下文 → out 44 套方法论匹配分析（[copilot](https://github.com/zinan92/copilot)）
+- **05 回测验证** — in 策略定义 → out 胜率 / 盈亏比 / 最大回撤（[backtest](https://github.com/zinan92/backtest)）
+- **06 风控决策** — in 信号 + 分析 + 持仓 → out 交易计划（方向/入场/止损/仓位）（[risk](https://github.com/zinan92/risk)）
+- **07 执行引擎** — in 交易计划 → out API 下单 + 执行确认（[executor](https://github.com/zinan92/executor)）
+- **08 复盘学习** — in 执行记录 + 原始信号 → out 归因分析 + 月度复盘（[journal](https://github.com/zinan92/journal)）
 
 **To-Do：**
 
-- [ ] **A 股端到端闭环** — 现有数据 + 感知信号 → 结构化交易建议（入场/止盈/止损）
-  📍 quant-data-pipeline · qualitative-data-pipeline
-  ✅ 给定一只股票，系统输出完整的交易计划（方向、入场价、止损、目标价、依据）
-
-- [ ] **回测验证** — 用历史数据验证交易建议的胜率
-  📍 quant-data-pipeline
-  ✅ 任意策略可跑 1 年回测，输出胜率/盈亏比/最大回撤
-
-- [ ] **实盘 API 对接** — 先接一个交易所（Alpaca 美股）
-  📍 quant-data-pipeline
-  ✅ 能通过 API 下单、查持仓、查订单状态
-
-- [ ] **风控系统** — 仓位管理 + 止损执行 + 暴露监控
-  📍 quant-data-pipeline
-  ✅ 超过预设风险阈值自动报警或拒绝下单
-
-- [ ] **美股端到端闭环** — 复制 A 股闭环到美股
-  📍 quant-data-pipeline
-  ✅ 美股也能输出完整交易计划 + 实盘执行
-
-- [ ] **加密端到端闭环** — 接币安 API，复制闭环
-  📍 quant-data-pipeline
-  ✅ 加密资产也能走完 数据→建议→执行
-
-- [ ] **资产关联图谱** — 跨资产因果关系建模
-  📍 quant-data-pipeline · qualitative-data-pipeline
-  ✅ 输入宏观事件（如"美联储加息"），输出各资产预期方向
-
+- [ ] **数据源补齐** — 外汇/债券/商品 OHLCV 接入
+  📍 kline
+- [ ] **资产关联图谱** — 跨资产因果关系建模，宏观事件 → 各资产预期方向
+  📍 signal
+- [ ] **回测泛化** — 从缠论专用 → 任意策略 + 任意资产
+  📍 backtest
+- [ ] **实盘对接** — Alpaca (美股) → Binance (加密) → 东方财富 (A股)
+  📍 executor
 - [ ] **统一世界观引擎** — 所有资产、所有数据源融合成一份研判
-  📍 全部 trading repos
-  ✅ 一份报告覆盖股/债/汇/商品/加密的统一观点和交易建议
-
-- [ ] **外汇/债券/商品数据源补齐**
-  📍 quant-data-pipeline
-  ✅ 覆盖主要外汇对、美国国债、原油/黄金/铜
-
-- [ ] **交易日志与自动复盘** — 每笔交易归因到触发信号
-  📍 quant-data-pipeline
-  ✅ 交易记录自动关联原始信号，月度复盘报告
+  📍 risk
+- [ ] **A 股端到端闭环** · **美股端到端闭环** · **加密端到端闭环**
+  📍 全部 8 个 stage 贯通即达成
 
 <details>
 <summary>📦 相关项目与工具</summary>
 
-📊 **[quant-dashboard](https://github.com/zinan92/quant-dashboard)** — A股缠论量化回测看板。分型→笔→中枢→背驰→买卖点全流程 + 组合回测 + QuantStats 绩效报告 + Bokeh 交互图
+📊 **[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)** — 原始多市场数据平台（28 组 API，8 数据源）。kline + signal 的代码种子来源
 
 🔖 [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) — LLM 每日自动研判，GitHub Actions 零成本运行
 
