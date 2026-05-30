@@ -192,6 +192,14 @@ build stuff最重要的就是定goal和success criteria，然后拆解到每一�
 
 ---
 
+### 资讯
+
+> **把世界读给我听 — 多源信息自动凝练成每日中文摘要。**
+
+- **每日 AI 资讯** — in 官方渠道 / X 关注 / 播客 / 公众号 关注列表 → out 每日 scored 中文日报 + Telegram 推送。四条独立路径、确定性路由、AI 只在节点内（评分 / 摘要 / 质检）；质量门 + 6 测试套件锁回归（[daily-newsletter](https://github.com/zinan92/daily-newsletter)）
+
+---
+
 ### 开发工具
 
 > **造东西时顺手造出的工具，自用 → 沉淀 → 开源。**
