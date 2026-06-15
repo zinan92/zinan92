@@ -255,6 +255,8 @@ build stuff最重要的就是定goal和success criteria，然后拆解到每一�
 
 </details>
 
+🔁 **[loop](https://github.com/zinan92/loop)** — 把一次性 coding-agent prompt 变成按价值排序、可审计、可暂停的自进化执行闭环；low-risk 自动跑、medium-risk 监督跑、没价值就不跑
+
 ---
 
 ### 产品评测
