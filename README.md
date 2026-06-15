@@ -107,7 +107,6 @@ build stuff最重要的就是定goal和success criteria，然后拆解到每一�
   - pointer 应该是默认分发方式，fork 是关键能力的 fallback，不是默认前置动作。
   - 你以后真正要维护的地基，不是某一个 skill，而是 registry + distribution + orchestrator policy。
 
-
 终局是一条 8 步管线。每一步是一个独立 capability，定义清楚 input / output / failure，做到极致。
 
 ```
@@ -225,6 +224,7 @@ build stuff最重要的就是定goal和success criteria，然后拆解到每一�
 - **AI 驱动全流程开发** — 规划→执行→验证自动化（[GSD](https://github.com/gsd-build/get-shit-done), [superpowers](https://github.com/obra/superpowers)）
 - **浏览器自动化** — AI Agent 控制 Chrome，快照驱动交互（[bb-browser](https://github.com/zinan92/bb-browser), [agent-browser](https://github.com/zinan92/agent-browser)）
 - **产品方向发现** — 5 维框架帮 v1 项目找下一步（[proactive-explorer](https://github.com/zinan92/proactive-explorer)）
+- **自进化执行闭环** — 把一次性 agent prompt 变成按价值排序、可审计、可暂停的 loop；low-risk 自动跑、medium-risk 监督跑、没价值就不跑（[loop](https://github.com/zinan92/loop)）
 
 <details>
 <summary>📦 相关项目与工具</summary>
@@ -254,8 +254,6 @@ build stuff最重要的就是定goal和success criteria，然后拆解到每一�
 🍴🔖 [skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter) — AI Agent 技能质量检查器，自动评估触发准确率 + 输出质量
 
 </details>
-
-🔁 **[loop](https://github.com/zinan92/loop)** — 把一次性 coding-agent prompt 变成按价值排序、可审计、可暂停的自进化执行闭环；low-risk 自动跑、medium-risk 监督跑、没价值就不跑
 
 ---
 
