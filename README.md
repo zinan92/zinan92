@@ -224,7 +224,7 @@ build stuff最重要的就是定goal和success criteria，然后拆解到每一�
 - **AI 驱动全流程开发** — 规划→执行→验证自动化（[GSD](https://github.com/gsd-build/get-shit-done), [superpowers](https://github.com/obra/superpowers)）
 - **浏览器自动化** — AI Agent 控制 Chrome，快照驱动交互（[bb-browser](https://github.com/zinan92/bb-browser), [agent-browser](https://github.com/zinan92/agent-browser)）
 - **产品方向发现** — 5 维框架帮 v1 项目找下一步（[proactive-explorer](https://github.com/zinan92/proactive-explorer)）
-- **自进化执行闭环** — 把一次性 agent prompt 变成按价值排序、可审计、可暂停的 loop；low-risk 自动跑、medium-risk 监督跑、没价值就不跑（[loop](https://github.com/zinan92/loop)）
+- **持续改进闭环** — coding-agent 在你的 Git 仓上按价值排序自动改进，可审计、可暂停；low-risk 自动跑、medium-risk 监督跑、没价值就不跑；Codex 或 Claude 任选（[loop](https://github.com/zinan92/loop)）
 
 <details>
 <summary>📦 相关项目与工具</summary>
