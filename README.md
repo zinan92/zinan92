@@ -1,283 +1,194 @@
-# Hey, it's Park
+<div align="center">
 
-上海
+# Park
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)
-![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![Shell](https://img.shields.io/badge/-Shell-121212?style=flat-square&logo=gnu-bash&logoColor=white)
+**I build AI-agent operating systems for markets, content, and product creation.**
 
----
+用 AI Agent 把交易、内容与产品创造，变成可以持续运行和学习的系统。
 
-🍴 = Fork 他人的项目 · 🔖 = 备选（还没用，未来可能用）
+上海 · Builder · Systems thinker
 
----
+</div>
 
-## 我怎么造东西
+<img src="./assets/operating-map.svg" width="100%" alt="Park's three operating systems: Trading OS, Content OS, and Agent Product Lab">
 
-build stuff最重要的就是定goal和success criteria，然后拆解到每一个可以被review/test的atomic unit.
+## The full picture
 
-```
-调研 research ➜ 设计 plan/design ➜ 开发 code & review ➜ 包装 package ➜ 维护 maintain （后面这两个我不太熟悉，还需要学习）
-```
+我不是在收集互不相干的 repo。我在搭三套相互连接的操作系统：
 
-**调研** — 使用dbskill/gstack来聊清楚需求。不凭空造。先找到最像的产品当锚点（"80% TradingView + 20% Koyfin"），截图收集 UI 参考。更高维度的需求和分析可以用naval google来聊：https://gemini.google.com/gem/aafc1ff1539f/5ef401e610e971c5 
+| System | Outcome | Current focus |
+|---|---|---|
+| **Trading OS** | 从市场事实走到受约束的交易决策与复盘 | Paper-first 闭环与可审计证据 |
+| **Content OS** | 从内容信号走到跨平台成品与反馈学习 | 独立 capability 串成生产系统 |
+| **Agent Product Lab** | 从产品意图走到真实使用证据 | Build → ready gate → Use 的交接闭环 |
 
-**设计** — superpowers/Brainstorm → PRD → 实现计划 → 产品原型图。原型要完全定义最终产品的样式，只是 design 不写代码。这里要deliver prd, implementation plan, ui（现在ui设计还是有点missing）
-
-**开发** — gsd开发。编码 → review → 打回 → 重写，循环直到全部通过。/codex可以在cc里面直接review代码。
-
-**包装** — 产品化。部署上线、CI/CD、README、Landing Page、域名绑定。能跑不等于能用。（现在只有gh readme一个skill改readme，部署，cicd，域名这些都是每次直接做，后期需要固定skill或者流程）
-
-**维护** — 监控告警、用户反馈、迭代优化。（现在没有这方面的流程）
+`READY` 可用入口与核心结果明确 · `BUILDING` 正在形成完整产品 · `EXPLORING` 仍在验证方向
 
 ---
 
-## 在造的东西
+## Trading OS
 
-### 交易
+> **Outcome:** 把多市场数据转成有来源、有风控、有执行证据的决策闭环。当前坚持 paper-first；不在这里宣称真钱能力已经开放。
 
-> **一个世界观，交易任何资产。**
+### System map
 
-8 步管线。每一步是一个独立 capability，定义清楚 input / output。GitHub 上的编号是组织结构，运行时是事件驱动。
+```text
+Market facts          Understanding          Decision             Learning
 
-```
- 01 行情数据    02 情报采集    03 信号合成    04 方法论路由
- ┌──────┐    ┌──────┐    ┌──────┐    ┌──────┐
- │kline │───▶│intel │───▶│signal│───▶│copil-│
- │      │    │      │    │      │    │ot    │
- └──────┘    └──────┘    └──────┘    └──────┘
-     ●           ●           ◐           ●
-
- 05 回测验证    06 风控决策    07 执行引擎    08 复盘学习
- ┌──────┐    ┌──────┐    ┌──────┐    ┌──────┐
- │back- │    │risk  │───▶│execu-│───▶│journ-│
- │test  │    │      │    │tor   │    │al    │
- └──────┘    └──────┘    └──────┘    └──────┘
-     ●           ◐           ◐           ◐
-
- ● = 已有   ◐ = 有代码种子(tradinghouse)   ○ = 待建
+01 Data        ──▶ 02 Intelligence ──▶ 03 Signal       ──▶ 04 Method routing
+   READY              READY                BUILDING          BUILDING
+      │
+      ▼
+05 Backtest    ──▶ 06 Risk plan    ──▶ 07 Paper execution ──▶ 08 Journal
+   READY              BUILDING             BUILDING              EXPLORING
 ```
 
-**已有的 capability：**
+### Products
 
-- **01 行情数据** — in ticker+timeframe → out OHLCV candles。A股/美股/加密/商品（[kline](https://github.com/zinan92/kline)）
-- **02 情报采集** — in 10+ 信息源 → out LLM 评分 + 跨源事件聚类（[intel](https://github.com/zinan92/intel)）
-- **03 信号合成** — in OHLCV + 事件 → out 归一化交易信号（[signal](https://github.com/zinan92/signal)）
-- **04 方法论路由** — in 信号 + 上下文 → out 44 套方法论匹配分析（[copilot](https://github.com/zinan92/copilot)）
-- **05 回测验证** — in 策略定义 → out 胜率 / 盈亏比 / 最大回撤（[backtest](https://github.com/zinan92/backtest)）
-- **06 风控决策** — in 信号 + 分析 + 持仓 → out 交易计划（方向/入场/止损/仓位）（[risk](https://github.com/zinan92/risk)）
-- **07 执行引擎** — in 交易计划 → out API 下单 + 执行确认（[executor](https://github.com/zinan92/executor)）
-- **08 复盘学习** — in 执行记录 + 原始信号 → out 归因分析 + 月度复盘（[journal](https://github.com/zinan92/journal)）
+| Product | Role in the system | Status |
+|---|---|---|
+| [datafeed](https://github.com/zinan92/datafeed) | ticker + timeframe → multi-market OHLCV | `READY` |
+| [intel](https://github.com/zinan92/intel) | 10+ sources → scored, clustered market events | `READY` |
+| [equity-research](https://github.com/zinan92/equity-research) | evidence snapshots → A-share investment-committee research | `BUILDING` |
+| [backtest](https://github.com/zinan92/backtest) | strategy definition → win rate, payoff and drawdown | `READY` |
+| [standard-kline](https://github.com/zinan92/standard-kline) | OHLCV + provenance → trustworthy chart surface | `READY` |
 
-**To-Do：**
+### Now / Next
 
-- [ ] **数据源补齐** — 外汇/债券/商品 OHLCV 接入
-  📍 kline
-- [ ] **资产关联图谱** — 跨资产因果关系建模，宏观事件 → 各资产预期方向
-  📍 signal
-- [ ] **回测泛化** — 从缠论专用 → 任意策略 + 任意资产
-  📍 backtest
-- [ ] **实盘对接** — Alpaca (美股) → Binance (加密) → 东方财富 (A股)
-  📍 executor
-- [ ] **统一世界观引擎** — 所有资产、所有数据源融合成一份研判
-  📍 risk
-- [ ] **A 股端到端闭环** · **美股端到端闭环** · **加密端到端闭环**
-  📍 全部 8 个 stage 贯通即达成
+- **Now** — 强化从行情、情报、策略到 Paper 执行的可审计闭环；把“代码存在”和“真实运行证据”分开。
+- **Next** — 用完整周期证据验证多资产闭环，再决定哪些能力值得进入更高风险阶段。
 
 <details>
-<summary>📦 相关项目与工具</summary>
+<summary><strong>More context</strong></summary>
 
-📊 **[quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline)** — 原始多市场数据平台（28 组 API，8 数据源）。kline + signal 的代码种子来源
-
-🔖 [daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) — LLM 每日自动研判，GitHub Actions 零成本运行
+- [quant-data-pipeline](https://github.com/zinan92/quant-data-pipeline) 是早期多市场数据与信号能力的集成底座。
+- 私有执行与风控实现不会从 Profile 暴露；公开页面只描述能力边界和已验证状态。
+- Backtest 是辅助证据，不自动等于策略可交易，更不等于 live-ready。
 
 </details>
 
 ---
 
-### 内容
+## Content OS
 
-> **创作者负责思考，机器负责其他一切。**
+> **Outcome:** 让创作者负责判断与表达，让系统处理发现、获取、理解、生产、组装、分发和反馈。
 
-  - Content Toolkit 自己是 Orchestrator Skill，不是业务 CLI。
-  - 每个 domain module 是 Capability Skill + its own scripts/CLI。
-  - pointer 应该是默认分发方式，fork 是关键能力的 fallback，不是默认前置动作。
-  - 你以后真正要维护的地基，不是某一个 skill，而是 registry + distribution + orchestrator policy。
+### System map
 
-终局是一条 8 步管线。每一步是一个独立 capability，定义清楚 input / output / failure，做到极致。
+```text
+Discover             Understand             Create                Learn
 
-```
- 01 信号发现    02 内容获取    03 内容理解    04 选题决策
- ┌──────┐    ┌──────┐    ┌──────┐    ┌──────┐
- │signal│───▶│downl-│───▶│extra-│───▶│cura- │
- │scanner│    │oader │    │ctor  │    │tor   │
- └──────┘    └──────┘    └──────┘    └──────┘
-     ○           ●           ●           ○
-
- 05 内容生产    06 成品组装    07 分发       08 反馈学习
- ┌──────┐    ┌──────┐    ┌──────┐    ┌──────┐
- │rewri-│───▶│asset │───▶│publi-│───▶│perfo-│
- │ter   │    │studio│    │sher  │    │rmance│
- └──────┘    └──────┘    └──────┘    └──────┘
-     ●           △           ●           ○
-
- ● = 已有   △ = 有底座   ○ = 待建
+01 Signals     ──▶ 02 Acquire       ──▶ 03 Extract      ──▶ 04 Curate
+   BUILDING           READY                 READY                EXPLORING
+      │
+      ▼
+05 Rewrite     ──▶ 06 Assemble      ──▶ 07 Publish      ──▶ 08 Performance
+   READY              READY                 BUILDING             EXPLORING
 ```
 
-**已有的 capability：**
+### Products
 
-- **02 内容获取** — URL 进去，原始文件 + 元数据出来。adapter 架构支持 4 平台，抖音需 cookies（[content-downloader](https://github.com/zinan92/content-downloader)）
-- **03 内容理解** — 视频转录 + 图片 OCR + 文章清洗 + 图集叙事合成 → 结构化文本。支持裸视频文件直接提取（[content-extractor](https://github.com/zinan92/content-extractor)）
-- **05 内容生产** — 跨平台改写引擎。支持裸 .md/.txt 直接改写，--from/--to 有默认值（[content-rewriter](https://github.com/zinan92/content-rewriter)）
-- **06 成品组装** — 7 个视频编辑 CLI + pipeline 串联 + 批量处理 + AI 降级兜底（[videocut](https://github.com/zinan92/videocut)）
-- **07 分发** — 7 平台定时批量发布，manifest.json 驱动（[social-auto-upload](https://github.com/dreammis/social-auto-upload)）
-- **00 统一入口** — `content <能力> [参数]`，6 个能力按需安装，中文 help，智能错误提示（[content-toolkit](https://github.com/zinan92/content-toolkit)）
+| Product | Role in the system | Status |
+|---|---|---|
+| [content-intelligence](https://github.com/zinan92/content-intelligence) | social data → trends, patterns and topic signals | `BUILDING` |
+| [content-downloader](https://github.com/zinan92/content-downloader) | platform URL → normalized media + metadata | `READY` |
+| [content-extractor](https://github.com/zinan92/content-extractor) | video / image / article → structured text | `READY` |
+| [content-rewriter](https://github.com/zinan92/content-rewriter) | source material → platform-specific drafts | `READY` |
+| [videocut](https://github.com/zinan92/videocut) | talking-head footage → edited video assets | `READY` |
+| [daily-newsletter](https://github.com/zinan92/daily-newsletter) | source feeds → selected Chinese daily brief + receipts | `READY` |
 
-**To-Do（按管线顺序）：**
+### Now / Next
 
-- [ ] **01 signal-scanner** — 跨平台信号扫描 + 趋势检测
-  📍 新 repo（intelligence 能力并入）
-  ✅ 配置关注列表后，输出每日 scored signal feed
-
-- [ ] **04 content-curator** — 从 100 条里选 3 条值得做的
-  📍 新 repo
-  ✅ 输入一批结构化内容 + 创作者画像，输出 ranked picks + 角度建议 + 理由
-
-- [x] **06 重构 videocut** — ~~拆出独立能力~~ 已完成：7 个 CLI 能力 + pipeline 串联 + 91 tests
-  📍 videocut
-  ✅ `videocut autocut` / `subtitle` / `hook` / `clip` / `cover` / `speed` / `pipeline`
-
-- [x] **07 content-publisher** — 使用 [social-auto-upload](https://github.com/dreammis/social-auto-upload) 作为发布引擎
-  📍 content-toolkit（batch-publish 编排脚本）· social-auto-upload（执行引擎）
-  ✅ 抖音/小红书/B站/快手/视频号/TikTok 定时批量发布
-
-- [ ] **08 performance-tracker** — 发布后追踪表现，归因到选题
-  📍 新 repo
-  ✅ 跨平台数据回收，输出 what worked / what didn't
+- **Now** — 独立能力已经覆盖获取、理解、改写和视频组装；重点是让它们以清晰合同协作，而不是继续堆工具。
+- **Next** — 补齐 curator 与 performance feedback，让选题质量和发布结果能够回流到下一轮生产。
 
 <details>
-<summary>📦 相关项目与工具</summary>
+<summary><strong>More context</strong></summary>
 
-**采集**
-
-🍴 [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) — 多平台主动爬虫，覆盖小红书/抖音/快手/B站/微博
-
-🍴 [wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter) — 微信公众号文章批量导出 · 8k⭐
-
-**视频生产**
-
-🔖 [seedance-expert](https://github.com/zinan92/seedance-expert) — 即梦 2.0 视频 prompt 技能
-
-🔖 [remotion-skills](https://github.com/remotion-dev/skills) — React 程序化视频生成
-
-🍴🔖 [AI-videos](https://github.com/zinan92/AI-videos) — 虚拟角色视频管线 · RunningHub 模型对比
-
-**分发**
-
-[social-auto-upload](https://github.com/dreammis/social-auto-upload) — Patchright 驱动的多平台自动发布引擎，7 个平台 · 作为 content-toolkit 的 publish capability
-
-🍴 [xiaohongshu-skills](https://github.com/autoclaw-cc/xiaohongshu-skills) — 小红书全功能自动化（搜索/互动/发布），Chrome Extension 架构
-
-**图片生产**
-
-🔖 [text-to-image-prompt-optimizer](https://github.com/manzxiao/text-to-image-prompt-optimizer) — 全平台图片 Prompt 优化
-
-🔖 [midjourney-replicate-flux](https://github.com/rawveg/skillsforge-marketplace) — FLUX 1.1 Pro 产品摄影级出图
+- [seedance-expert](https://github.com/zinan92/seedance-expert) 把视频创意转成可执行的多模态生成提示。
+- [AI-videos](https://github.com/zinan92/AI-videos) 探索虚拟人物换装与动作迁移工作流。
+- 已归档的 orchestrator 和 workbench 保留为历史证据，不再占据主地图。
 
 </details>
 
 ---
 
-### 资讯
+## Agent Product Lab
 
-> **把世界读给我听 — 多源信息自动凝练成每日中文摘要。**
+> **Outcome:** 把独立产品想法做成 ready for use 的产品，再用真实任务验证价值，把缺口送回 Build。
 
-- **每日 AI 资讯** — in 官方渠道 / X 关注 / 播客 / 公众号 关注列表 → out 每日 scored 中文日报 + Telegram 推送。四条独立路径、确定性路由、AI 只在节点内（评分 / 摘要 / 质检）；质量门 + 6 测试套件锁回归（[daily-newsletter](https://github.com/zinan92/daily-newsletter)）
+### System map
 
----
+```text
+Intent              Build                 Gate                 Use
 
-### 开发工具
-
-> **造东西时顺手造出的工具，自用 → 沉淀 → 开源。**
-
-开发流程已标准化，Doc-Driven Workflow 驱动所有项目。
-
-```
-开发框架              自动化工具             增强能力
-
-[GSD]               [bb-browser]         [self-improving-agent]
- 规划→执行→验证        浏览器即API             自我进化
-[superpowers]       [agent-browser]
- 7阶段工作流           快照驱动自动化
-[proactive-explorer]
- 产品方向探索
-        │                   │                     │
-        └───────── 全部服务于 Trading + Content ──────┘
+01 Explore    ──▶ 02 Product build ──▶ 03 Readiness     ──▶ 04 Real tasks
+   READY             BUILDING             READY                BUILDING
+                                                                  │
+                                                                  ▼
+                   06 Improve      ◀── 05 Evidence
+                      READY              READY
 ```
 
-**现在能做到的：**
+### Products
 
-- **文档驱动开发框架** — 5 阶段 / 22 步，内置 task scaffolding + workflow guards + 状态机（[doc-driven-dev-workflow](https://github.com/zinan92/doc-driven-dev-workflow)）
-- **AI 驱动全流程开发** — 规划→执行→验证自动化（[GSD](https://github.com/gsd-build/get-shit-done), [superpowers](https://github.com/obra/superpowers)）
-- **浏览器自动化** — AI Agent 控制 Chrome，快照驱动交互（[bb-browser](https://github.com/zinan92/bb-browser), [agent-browser](https://github.com/zinan92/agent-browser)）
-- **产品方向发现** — 5 维框架帮 v1 项目找下一步（[proactive-explorer](https://github.com/zinan92/proactive-explorer)）
-- **持续改进闭环** — coding-agent 在你的 Git 仓上按价值排序自动改进，可审计、可暂停；low-risk 自动跑、medium-risk 监督跑、没价值就不跑；Codex 或 Claude 任选（[loop](https://github.com/zinan92/loop)）
+| Product | Role in the system | Status |
+|---|---|---|
+| [proactive-explorer](https://github.com/zinan92/proactive-explorer) | existing product → evidence-backed next direction | `READY` |
+| [doc-driven-dev-workflow](https://github.com/zinan92/doc-driven-dev-workflow) | intent → reviewable development stages and guards | `READY` |
+| [wechat-miniprogram-shipping](https://github.com/zinan92/wechat-miniprogram-shipping) | product intent → release contract and evidence path | `READY` |
+| [repo-evals](https://github.com/zinan92/repo-evals) | product claims → reproducible verdict dossier | `READY` |
+| [loop](https://github.com/zinan92/loop) | repo + contract → value-ranked issues, PRs and digest | `READY` |
+| [codex-harness](https://github.com/zinan92/codex-harness) | local agent sessions → project and token evidence | `BUILDING` |
+
+### Now / Next
+
+- **Now** — Product Lab 已明确分成 **Build** 与 **Use**：Build 对 readiness 负责，Use 对真实任务与使用证据负责。
+- **Next** — 把 ready handoff、真实使用、缺口复现和回流需求做成跨产品可复用的证据链。
 
 <details>
-<summary>📦 相关项目与工具</summary>
+<summary><strong>Operating rule</strong></summary>
 
-**框架**
+```text
+Intent → Issue contract → Build → Readiness gate → Real use → Evidence → Next issue
+```
 
-🔖 [deer-flow](https://github.com/bytedance/deer-flow) — 字节跳动 SuperAgent，研究/编码/创作全能 · 40k⭐
-
-🔖 [agent-core](https://github.com/zinan92/agent-core) — Agent 的操作系统，由 Agent 自己构建。生命周期 + 工具 + 记忆管理
-
-🔖 [skills-repo](https://github.com/zinan92/skills-repo) — 61 个 AI Agent 技能，按领域分组 + frontmatter 路由
-
-**自动化**
-
-🍴 [web-access](https://github.com/eze-is/web-access) — 让 Claude Code 完整联网，三层通道（搜索 + 抓取 + API）
-
-🍴🔖 [CLI-Anything](https://github.com/HKUDS/CLI-Anything) — 任何软件一键生成 CLI 界面
-
-🍴🔖 [opencli](https://github.com/zinan92/opencli) — 把任何网站变成你的 CLI。AI 原生浏览器自动化 + 数据提取
-
-**增强**
-
-🍴 [self-improving-agent](https://github.com/zhaono1/agent-playbook/tree/main/skills/self-improving-agent) — 自我进化 Agent，运行后自动分析 + 调优自身性能
-
-🍴🔖 [lossless-claw](https://github.com/zinan92/lossless-claw) — 无损上下文管理插件，防止对话压缩丢信息
-
-🍴🔖 [skill-vetter](https://github.com/openclaw/skills/tree/main/skills/spclaudehome/skill-vetter) — AI Agent 技能质量检查器，自动评估触发准确率 + 输出质量
+绿测试证明代码通过了测试，不自动证明产品 ready；部署成功也不自动证明用户结果已经发生。
 
 </details>
 
 ---
 
-### 产品评测
+## How the systems connect
 
-Fork → 部署 → 逐条验证 README 承诺 → 记录真实结果与证据。
-
-这里的 repo 都是我实际部署并评估过的工具和 skills。每个都会重写 README：上半部分是 claim-by-claim 的评测结论，下半部分保留原始 README 作为对照。命名规范：`eval__项目名`。
-
-[eval__MoneyPrinterV2](https://github.com/zinan92/eval__MoneyPrinterV2) — 自动化内容赚钱工具（23k⭐），最终结论：能硬跑出 MP4，但 setup 成本高、文档缺失严重、成片质量垃圾，判定失败
-
----
-
-## 活跃度
-
-![GitHub Contribution Graph](https://ghchart.rshah.org/zinan92)
-
----
-
-## 冷知识
-
-我所有的 repo 要么是为了赚钱，要么是为了省时间。通常两个都是。
-
+```text
+                 ┌─────────────────────────┐
+                 │    Agent Product Lab    │
+                 │  builds + tests + learns│
+                 └────────────┬────────────┘
+                              │
+                     product capabilities
+                              │
+             ┌────────────────┴────────────────┐
+             ▼                                 ▼
+       ┌────────────┐                    ┌────────────┐
+       │ Trading OS │                    │ Content OS │
+       │ decisions  │                    │ production │
+       └─────┬──────┘                    └─────┬──────┘
+             └──────────── evidence ───────────┘
+                              │
+                              ▼
+                       better next build
 ```
-行情走势:  ████████████████▄▄  📈
-我的睡眠:  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  📉
-```
+
+三套系统共享同一条原则：**先定义结果，再建立可复验合同；系统必须诚实表达 READY、BUILDING 和 EXPLORING。**
+
+## Working together
+
+如果你也在构建 agent-native 产品、研究系统或内容基础设施，可以从相关 repo 的 issue 开始交流。最好的合作入口不是“聊一个大想法”，而是一个清楚的问题、输入、期望输出和失败边界。
+
+<div align="center">
+
+_Build the system. Use the system. Keep the evidence._
+
+</div>
