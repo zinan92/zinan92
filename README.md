@@ -51,6 +51,7 @@ Market facts          Understanding          Decision             Learning
 | [intel](https://github.com/zinan92/intel) | 10+ sources → scored, clustered market events | `READY` |
 | [equity-research](https://github.com/zinan92/equity-research) | evidence snapshots → A-share investment-committee research | `BUILDING` |
 | [backtest](https://github.com/zinan92/backtest) | strategy definition → win rate, payoff and drawdown | `READY` |
+| [trading-strategy](https://github.com/zinan92/trading-strategy) | Canonical DCA/Grid strategy → deterministic plans, previews and replays | `READY` |
 | [standard-kline](https://github.com/zinan92/standard-kline) | OHLCV + provenance → trustworthy chart surface | `READY` |
 
 ### Now / Next
