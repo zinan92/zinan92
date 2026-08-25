@@ -137,7 +137,7 @@ Intent              Build                 Gate                 Use
 |---|---|---|
 | [proactive-explorer](https://github.com/zinan92/proactive-explorer) | existing product → evidence-backed next direction | `READY` |
 | [doc-driven-dev-workflow](https://github.com/zinan92/doc-driven-dev-workflow) | intent → reviewable development stages and guards | `READY` |
-| [wechat-miniprogram-shipping](https://github.com/zinan92/wechat-miniprogram-shipping) | product intent → release contract and evidence path | `READY` |
+| [wechat-miniprogram-shipping](https://github.com/zinan92/wechat-miniprogram-shipping) | Mini Program intent + receipts → evidence-gated shipping path, independent QA and recoverable release handoff | `READY` |
 | [repo-evals](https://github.com/zinan92/repo-evals) | product claims → reproducible verdict dossier | `READY` |
 | [loop](https://github.com/zinan92/loop) | repo + contract → value-ranked issues, PRs and digest | `READY` |
 | [codex-harness](https://github.com/zinan92/codex-harness) | local agent sessions → project and token evidence | `BUILDING` |
