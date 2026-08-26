@@ -12,6 +12,18 @@
 
 <img src="./assets/operating-map.svg" width="100%" alt="Park's three operating systems: Trading OS, Content OS, and Agent Product Lab">
 
+## Explore Park's universe
+
+| Entry point | Registry | What it contains |
+|---|---|---|
+| [Trading](https://github.com/zinan92/trading) | Public | Market data, research, strategies, engines, interfaces and full systems |
+| [Content](https://github.com/zinan92/content-production) | Public | Discovery, production, publishing and growth |
+| [Product Lab](https://github.com/zinan92/product-lab) | Public | Mature products, one repo per row |
+| [Agent](https://github.com/zinan92/agent) | Public | Runtimes, orchestration, skills, memory and tooling |
+| [Park OS](https://github.com/zinan92/park-operating-system) | Private | Canonical universe snapshot, governance and lock authority |
+
+The registries contain the full catalog. This profile keeps only the map and a small amount of system context below.
+
 ## The full picture
 
 我不是在收集互不相干的 repo。我在搭三套相互连接的操作系统：
@@ -20,7 +32,9 @@
 |---|---|---|
 | **Trading OS** | 从市场事实走到受约束的交易决策与复盘 | Paper-first 闭环与可审计证据 |
 | **Content OS** | 从内容信号走到跨平台成品与反馈学习 | 独立 capability 串成生产系统 |
-| **Agent Product Lab** | 从产品意图走到真实使用证据 | Build → ready gate → Use 的交接闭环 |
+| **Product Lab** | 从成熟产品链接到真实使用证据 | 一 repo 一行，直接进入产品入口 |
+| **Agent** | 从 runtime 到 skills、memory 和 orchestration | 通用 Agent 基础设施 |
+| **Park OS** | 维护 Park 自己的身份、治理和 universe 真源 | canonical snapshot + lock authority |
 
 `READY` 可用入口与核心结果明确 · `BUILDING` 正在形成完整产品 · `EXPLORING` 仍在验证方向
 
