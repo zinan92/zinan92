@@ -1,44 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
-  <title id="title">Park's three operating systems</title>
-  <desc id="desc">Trading OS, Content OS, and Agent Product Lab connect products with real-world evidence.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450" role="img" aria-labelledby="title desc">
+  <title id="title">Park's five GitHub universe entry points</title>
+  <desc id="desc">Trading, Content, Product Lab, Agent, and Park OS connect to one canonical universe.</desc>
   <style>
     .bg { fill: #f6f8fa; }
     .card { fill: #ffffff; stroke: #d0d7de; stroke-width: 2; }
-    .heading { fill: #1f2328; font: 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .heading-small { fill: #1f2328; font: 700 28px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .copy { fill: #59636e; font: 500 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .eyebrow { fill: #59636e; font: 700 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 2px; }
-    .flow { fill: none; stroke: #8c959f; stroke-width: 3; stroke-linecap: round; }
+    .heading { fill: #1f2328; font: 700 25px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .copy { fill: #59636e; font: 500 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .eyebrow { fill: #59636e; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 2px; }
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; }
       .card { fill: #161b22; stroke: #30363d; }
-      .heading, .heading-small { fill: #f0f6fc; }
+      .heading { fill: #f0f6fc; }
       .copy, .eyebrow { fill: #8b949e; }
-      .flow { stroke: #6e7681; }
     }
   </style>
-  <rect class="bg" width="1200" height="420" rx="24"/>
-  <text class="eyebrow" x="600" y="53" text-anchor="middle">THREE SYSTEMS · ONE LEARNING LOOP</text>
-  <rect class="card" x="54" y="92" width="318" height="250" rx="18"/>
-  <rect x="54" y="92" width="318" height="8" rx="4" fill="#2da44e"/>
-  <circle cx="104" cy="148" r="19" fill="#2da44e" opacity="0.16"/>
-  <path d="M94 151 l8 8 14 -20" fill="none" stroke="#2da44e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text class="heading" x="87" y="205">Trading OS</text>
-  <text class="copy" x="87" y="250">facts → decisions</text>
-  <text class="copy" x="87" y="282">→ paper evidence</text>
-  <rect class="card" x="441" y="92" width="318" height="250" rx="18"/>
-  <rect x="441" y="92" width="318" height="8" rx="4" fill="#8250df"/>
-  <circle cx="491" cy="148" r="19" fill="#8250df" opacity="0.16"/>
-  <path d="M481 151 l8 8 14 -20" fill="none" stroke="#8250df" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text class="heading" x="474" y="205">Content OS</text>
-  <text class="copy" x="474" y="250">signals → stories</text>
-  <text class="copy" x="474" y="282">→ feedback</text>
-  <rect class="card" x="828" y="92" width="318" height="250" rx="18"/>
-  <rect x="828" y="92" width="318" height="8" rx="4" fill="#0969da"/>
-  <circle cx="878" cy="148" r="19" fill="#0969da" opacity="0.16"/>
-  <path d="M868 151 l8 8 14 -20" fill="none" stroke="#0969da" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text class="heading-small" x="861" y="205">Agent Product Lab</text>
-  <text class="copy" x="861" y="250">intent → product</text>
-  <text class="copy" x="861" y="282">→ real use</text>
-  <text class="eyebrow" x="600" y="384" text-anchor="middle">BUILD · USE · KEEP THE EVIDENCE</text>
+  <rect class="bg" width="1200" height="450" rx="24"/>
+  <text class="eyebrow" x="600" y="52" text-anchor="middle">FIVE ENTRY POINTS · ONE CANONICAL UNIVERSE</text>
+  <g transform="translate(24 92)">
+    <rect class="card" width="216" height="268" rx="16"/>
+    <rect width="216" height="8" rx="4" fill="#2da44e"/>
+    <circle cx="42" cy="55" r="18" fill="#2da44e" opacity=".16"/>
+    <path d="M33 57 l7 7 13 -19" fill="none" stroke="#2da44e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="heading" x="24" y="125">Trading</text>
+    <text class="copy" x="24" y="168">data → decisions</text>
+    <text class="copy" x="24" y="195">→ execution</text>
+  </g>
+  <g transform="translate(264 92)">
+    <rect class="card" width="216" height="268" rx="16"/>
+    <rect width="216" height="8" rx="4" fill="#8250df"/>
+    <circle cx="42" cy="55" r="18" fill="#8250df" opacity=".16"/>
+    <path d="M33 57 l7 7 13 -19" fill="none" stroke="#8250df" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="heading" x="24" y="125">Content</text>
+    <text class="copy" x="24" y="168">signals → stories</text>
+    <text class="copy" x="24" y="195">→ distribution</text>
+  </g>
+  <g transform="translate(504 92)">
+    <rect class="card" width="216" height="268" rx="16"/>
+    <rect width="216" height="8" rx="4" fill="#0969da"/>
+    <circle cx="42" cy="55" r="18" fill="#0969da" opacity=".16"/>
+    <path d="M33 57 l7 7 13 -19" fill="none" stroke="#0969da" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="heading" x="24" y="125">Product Lab</text>
+    <text class="copy" x="24" y="168">products → links</text>
+    <text class="copy" x="24" y="195">→ real use</text>
+  </g>
+  <g transform="translate(744 92)">
+    <rect class="card" width="216" height="268" rx="16"/>
+    <rect width="216" height="8" rx="4" fill="#bf8700"/>
+    <circle cx="42" cy="55" r="18" fill="#bf8700" opacity=".16"/>
+    <path d="M33 57 l7 7 13 -19" fill="none" stroke="#bf8700" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="heading" x="24" y="125">Agent</text>
+    <text class="copy" x="24" y="168">runtime → tools</text>
+    <text class="copy" x="24" y="195">→ orchestration</text>
+  </g>
+  <g transform="translate(984 92)">
+    <rect class="card" width="192" height="268" rx="16"/>
+    <rect width="192" height="8" rx="4" fill="#6e7781"/>
+    <circle cx="42" cy="55" r="18" fill="#6e7781" opacity=".16"/>
+    <path d="M33 57 l7 7 13 -19" fill="none" stroke="#6e7781" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="heading" x="24" y="125">Park OS</text>
+    <text class="copy" x="24" y="168">governance</text>
+    <text class="copy" x="24" y="195">→ canonical source</text>
+  </g>
+  <text class="eyebrow" x="600" y="410" text-anchor="middle">BUILD · USE · KEEP THE EVIDENCE</text>
 </svg>
