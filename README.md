@@ -84,43 +84,55 @@ Market facts          Understanding          Decision             Learning
 
 ## Content OS
 
-> **Outcome:** 让创作者负责判断与表达，让系统处理发现、获取、理解、生产、组装、分发和反馈。
+> **Outcome:** 让创作者负责判断与表达，让系统处理收集、选题、加工、发出和复盘。一个人的内容生产，每天一条主线。
 
 ### System map
 
 ```text
-Discover             Understand             Create                Learn
+Collect              Plan                  Make                  Ship & Learn
 
-01 Signals     ──▶ 02 Acquire       ──▶ 03 Extract      ──▶ 04 Curate
-   BUILDING           READY                 READY                EXPLORING
-      │
-      ▼
-05 Rewrite     ──▶ 06 Assemble      ──▶ 07 Publish      ──▶ 08 Performance
-   READY              READY                 BUILDING             EXPLORING
+01 Obsidian    ──▶ 02 Topics + Hot  ──▶ 03 Article draft  ──▶ 04 Park 研习室
+   READY              READY                 READY                 BUILDING
+                                                │
+                                                ▼
+05 Talking-head ──▶ 06 Douyin        ──▶ 07 Breakout teardown ──▶ back to 02
+   READY               manual               READY
 ```
 
 ### Products
 
 | Product | Role in the system | Status |
 |---|---|---|
-| [content-intelligence](https://github.com/zinan92/content-intelligence) | social data → trends, patterns and topic signals | `BUILDING` |
+| [content-studio](https://github.com/zinan92/content-studio) | 内容工作台：Obsidian 进项 → 今日主线 → 选题 → 卡兹克写作文章草稿 → 爆款拆解复盘 | `BUILDING` |
+| [park-koubo-workflow](https://github.com/zinan92/park-koubo-workflow) | 口播视频导演 skill：剪映粗剪 + 字幕 → Hook、正文视觉、成片 | `READY` |
 | [content-downloader](https://github.com/zinan92/content-downloader) | platform URL → normalized media + metadata | `READY` |
 | [content-extractor](https://github.com/zinan92/content-extractor) | video / image / article → structured text | `READY` |
-| [content-rewriter](https://github.com/zinan92/content-rewriter) | source material → platform-specific drafts | `READY` |
-| [videocut](https://github.com/zinan92/videocut) | talking-head footage → edited video assets | `READY` |
 | [daily-newsletter](https://github.com/zinan92/daily-newsletter) | source feeds → selected Chinese daily brief + receipts | `READY` |
+| [park-morning](https://github.com/zinan92/park-morning) | three daily briefs → the one page Park reads every morning | `READY` |
+
+### Skills in the workflow
+
+自己写的放在上表；下面这些是别人写的、我每天在用的 skill，按生产阶段列出并署名。
+
+| Stage | Skill | Author |
+|---|---|---|
+| 加工 · 文章 | [khazix-writer](https://github.com/KKKKhazix/khazix-skills) | 数字生命卡兹克 |
+| 选题 / 复盘 | [dbskill](https://github.com/dontbesilent2025/dbskill) (dbs-content, dbs-deconstruct, dbs-diagnosis) | dontbesilent |
+| 加工 · 视频 | [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | Vincentwei1021 |
+| 发出 · 公众号 | [gzh-design](https://github.com/isjiamu/gzh-design-skill) · [baoyu-skills](https://github.com/JimLiu/baoyu-skills) | isjiamu · 宝玉 |
+| 选题 · X | [x-mentor-skill](https://github.com/alchaincyf/x-mentor-skill) | alchaincyf |
 
 ### Now / Next
 
-- **Now** — 独立能力已经覆盖获取、理解、改写和视频组装；重点是让它们以清晰合同协作，而不是继续堆工具。
-- **Next** — 补齐 curator 与 performance feedback，让选题质量和发布结果能够回流到下一轮生产。
+- **Now** — 文章线已跑通：Obsidian 笔记一键写成草稿，交给 Park 研习室；抖音爆款拆解按账号自身中位数找样本。
+- **Next** — 文章自动进研习室草稿箱；视频线（口播稿、剪辑、发出记录）接进同一条主线；多账号。
 
 <details>
 <summary><strong>More context</strong></summary>
 
 - [seedance-expert](https://github.com/zinan92/seedance-expert) 把视频创意转成可执行的多模态生成提示。
 - [AI-videos](https://github.com/zinan92/AI-videos) 探索虚拟人物换装与动作迁移工作流。
-- 已归档的 orchestrator 和 workbench 保留为历史证据，不再占据主地图。
+- 早期的 content-workbench、content-rewriter、content-intelligence、content-toolkit、videocut、douyin-downloader 已归档，保留为历史证据，能力已并入上面的主线。
 
 </details>
 
