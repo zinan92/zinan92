@@ -24,7 +24,7 @@
 
 | 产品 | 适合谁 / 能做什么 | 当前入口 |
 |---|---|---|
-| **选题工作台** | 靠内容获客的老板和他的内容团队：找 → 写 → 剪 → 发 → 盘，一个网页走完 | [免费试用 7 天](https://xuanti.park-ai-intel.com/) · 之后 ¥299/月 |
+| **选题工作台** | 靠内容获客的老板和他的内容团队：找 → 写 → 剪 → 发 → 盘，一个网页走完 | [¥19.9 试 3 天](https://xuanti.park-ai-intel.com/) · 之后 ¥199/月 |
 | **内容工作台（开源）** | 想自己部署的内容创作者：同一条 找 → 写 → 剪 → 发 → 盘，装在自己的 Mac 上，用自己的 AI 和 key | [源码](https://github.com/zinan92/content-studio-open) · MIT，README 写给你的 AI 照着装 |
 | **Park 研习室** | 研究者、知识创作者：电脑发布 Markdown / HTML，手机管理，微信会员阅读 | [产品介绍](https://park-ai-intel.com/products/wechat-xingqiu/) · 可演示，微信正式发布待完成 |
 | **天机** | 传统文化爱好者：出生信息 → 命盘与 AI 故事解读 → 追问与分享 | [直接体验](https://tianji.park-ai-intel.com/) · [产品介绍](https://park-ai-intel.com/products/tianji/) |
