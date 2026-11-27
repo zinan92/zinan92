@@ -1,53 +1,53 @@
 # Park
 
-**把独立思考，做成用得上的产品。**
+**Turning independent thinking into products people actually use.**
 
-我是 Park，会做内容的交易员。我用 AI 构建内容生产工作台、交易与投研工具，以及可以交给真实用户的独立产品。
+I'm Park — a trader who makes content. I build local-first AI tools for content production, trading & market research, and standalone products built for real users.
 
-[网站](https://park-ai-intel.com/) · [Principles](https://park-ai-intel.com/principles) · [Predictions](https://park-ai-intel.com/predictions) · [联系我](https://park-ai-intel.com/consultation)
+[Website](https://park-ai-intel.com/) · [Principles](https://park-ai-intel.com/principles) · [Predictions](https://park-ai-intel.com/predictions) · [Get in touch](https://park-ai-intel.com/consultation)
 
 ## Start Here
 
-- 🎬 **[Park Studio](https://github.com/zinan92/park-studio)** — 本地开源内容操作系统：选题 → 双模式本地剪辑 → 12 平台按需填表 → 真实复盘（提供 macOS DMG）
-- 📓 **[Trade Journal](https://github.com/zinan92/trade-journal)** — 本地交易员日终闭环工作台：盘前 3 步 4-EMA 扫图定调 → 盘后文章式复盘 → 每日日历归档
-- 🏋️ **[轻练 · get-fit](https://github.com/zinan92/get-fit)** — 健身私教全景会员工作台与 Remote MCP Server，自动生成每周一页纸 A4 周报 PDF
-- 📰 **[Daily Newsletter](https://github.com/zinan92/daily-newsletter)** — 本地优先的 AI 每日晨报管线：抓取官方 / X / 播客 / 公众号，自动凝练为中文日报
-- 📈 **[Trading System](https://github.com/zinan92/trading-system)** — Park 交易平台：GridMind 面板 + 交易台 + broker / strategy / kline 包（Testnet / Paper）
-- 🔥 **[Douyin Teardown](https://github.com/zinan92/douyin-teardown)** — 拆解一条抖音视频为什么爆：点赞倍数 + 带时间戳的结构拆解报告
+- 🎬 **[Park Studio](https://github.com/zinan92/park-studio)** — Local-first open-source content OS: ideation, dual-mode video editing, 12-platform CDP draft filling, and analytics review (macOS DMG available)
+- 📓 **[Trade Journal](https://github.com/zinan92/trade-journal)** — Local end-of-day workbench for traders: 3-step pre-market 4-EMA chart planning, post-market narrative reviews, and daily archive calendar
+- 🏋️ **[get-fit](https://github.com/zinan92/get-fit)** — Personal-trainer client workbench & Remote MCP Server that turns workouts, meal logs, and chats into weekly one-page A4 PDF reports
+- 📰 **[Daily Newsletter](https://github.com/zinan92/daily-newsletter)** — Local-first AI daily inbox pipeline: fetches official feeds, X, podcasts, and articles into a curated daily brief
+- 📈 **[Trading System](https://github.com/zinan92/trading-system)** — Full codebase behind [trade.park-ai-intel.com/trade](https://trade.park-ai-intel.com/trade): GridMind console, desk, and broker/strategy/K-line packages (Testnet / Paper)
+- 🔥 **[Douyin Teardown](https://github.com/zinan92/douyin-teardown)** — Reverse-engineer why a Douyin video went viral: engagement multiplier + timestamped structural breakdown
 
 ## Projects
 
-### 内容 · Content
+### Content
 
-- 🎬 **[park-studio](https://github.com/zinan92/park-studio)** — 本地开源内容操作系统：选题、双模式本地剪辑、12 平台按需 CDP 只填不发、真实复盘
-- 📰 **[daily-newsletter](https://github.com/zinan92/daily-newsletter)** — 本地优先 AI 每日晨报管线：抓取信息源、AI 筛选撰写、输出 Markdown / HTML / PNG 与飞书回执
-- 🔥 **[douyin-teardown](https://github.com/zinan92/douyin-teardown)** — 一条抖音视频为什么爆：输入链接，输出点赞倍数与带时间戳的结构拆解 `report.md`
-- 🎞️ **[park-video-v2](https://github.com/zinan92/park-video-v2)** — 口播视频加动效：AI 规划，脚本渲染与检查
-- ✍️ **[park-writing](https://github.com/zinan92/park-writing)** — Park 的写作框架：从口述 / SRT / 笔记到框架卡、评分与逐字稿
-- 🌳 **[park-knowledge](https://github.com/zinan92/park-knowledge)** — 知识树：把外部知识内化成领域专家 Skill
-- 🎥 **[AI-videos](https://github.com/zinan92/AI-videos)** — AI 虚拟人物换装 + 动作迁移视频生成 pipeline
-- 🌐 线上入口：[选题工作台](https://xuanti.park-ai-intel.com/) · [Park 晨报](https://park-ai-intel.com/daily/) · [Park 研习室](https://park-ai-intel.com/products/wechat-xingqiu/)
+- 🎬 **[park-studio](https://github.com/zinan92/park-studio)** — Local-first open-source content OS: ideation, dual-mode local editing, 12-platform CDP draft filling, and real analytics review
+- 📰 **[daily-newsletter](https://github.com/zinan92/daily-newsletter)** — Local-first daily inbox pipeline: fetch feeds, AI curation & writing, Markdown/HTML/PNG output, and Feishu delivery receipts
+- 🔥 **[douyin-teardown](https://github.com/zinan92/douyin-teardown)** — Viral Douyin video analyzer: URL + cookies in → engagement multiplier + timestamped structural teardown `report.md` out
+- 🎞️ **[park-video-v2](https://github.com/zinan92/park-video-v2)** — Motion graphics for talking-head videos: AI-planned scenes, scripted rendering, and automated QA checks
+- ✍️ **[park-writing](https://github.com/zinan92/park-writing)** — Structured writing workflow & 9-point checklist: voice notes / SRTs / drafts in → scored outline & final script out
+- 🌳 **[park-knowledge](https://github.com/zinan92/park-knowledge)** — Knowledge tree that distills external expertise into reusable domain-expert AI skills
+- 🎥 **[AI-videos](https://github.com/zinan92/AI-videos)** — Virtual character outfit-swap & motion-transfer video generation pipeline
+- 🌐 Live web apps: [Content Workbench](https://xuanti.park-ai-intel.com/) · [Park Daily](https://park-ai-intel.com/daily/) · [Park Study Room](https://park-ai-intel.com/products/wechat-xingqiu/)
 
-### 交易 · Trading
+### Trading
 
-- 📓 **[trade-journal](https://github.com/zinan92/trade-journal)** — 本地交易员日终闭环工作台：48 标的跨市场行情、4-EMA 交互 K 线、盘后复盘与纪律库
-- 📈 **[trading-system](https://github.com/zinan92/trading-system)** — Park 交易平台：GridMind 面板 + 交易台 + broker / strategy / kline 包
-- 📊 **[datafeed](https://github.com/zinan92/datafeed)** — 跨市场行情数据服务：A 股 / 美股 / 加密 / 商品 OHLCV K 线
-- 📡 **[intel](https://github.com/zinan92/intel)** — 情报采集引擎：10+ 信息源抓取、LLM 评分与跨源事件聚类
-- 🧭 **[watchlist](https://github.com/zinan92/watchlist)** — 行情与新闻共用的标的注册表：6 条宏观主线 / 24 个中观赛道 / 109 个标的
-- 📑 **[equity-research](https://github.com/zinan92/equity-research)** — A 股长期投委会 + 证据快照深度研报平台
-- 🧪 **[backtest](https://github.com/zinan92/backtest)** — 策略回测验证：输出胜率、盈亏比与最大回撤
+- 📓 **[trade-journal](https://github.com/zinan92/trade-journal)** — Local trader EOD workbench: 48 cross-market tickers, interactive 4-EMA charts, narrative post-market reviews, and playbook library
+- 📈 **[trading-system](https://github.com/zinan92/trading-system)** — Park trading platform: GridMind console, execution desk, and broker / strategy / K-line packages (Testnet / Paper only)
+- 📊 **[datafeed](https://github.com/zinan92/datafeed)** — Unified multi-market OHLCV market data service covering A-shares, US equities, crypto, and commodities
+- 📡 **[intel](https://github.com/zinan92/intel)** — Market intelligence pipeline: ingests 10+ sources with LLM scoring and cross-source event clustering
+- 🧭 **[watchlist](https://github.com/zinan92/watchlist)** — Shared exposure registry for market data & news: 6 macro themes, 24 sectors, 109 tracked tickers
+- 📑 **[equity-research](https://github.com/zinan92/equity-research)** — Deep equity research platform with investment-committee workflow and evidence snapshots for A-shares
+- 🧪 **[backtest](https://github.com/zinan92/backtest)** — Strategy backtesting suite outputting win rate, payoff ratio, and max drawdown
 
-### 其他产品 · Other Products
+### Other Products
 
-- 🏋️ **[get-fit（轻练）](https://github.com/zinan92/get-fit)** — 私教全景工作台与 Remote MCP Server，沉淀课表、餐食热量与每周一页纸 A4 周报（[产品介绍](https://park-ai-intel.com/products/get-fit/)）
-- 🔮 **[tianji（天机）](https://github.com/zinan92/tianji)** — 输入生日排八字与 AI 故事解读，基于 [Brhiza/mingyu](https://github.com/Brhiza/mingyu) 修改（AGPL-3.0）· [直接体验](https://tianji.park-ai-intel.com/)
+- 🏋️ **[get-fit](https://github.com/zinan92/get-fit)** — Personal-trainer panoramic workbench & Remote MCP Server for training plans, meal calories, and weekly A4 PDF reports ([Overview](https://park-ai-intel.com/products/get-fit/))
+- 🔮 **[tianji](https://github.com/zinan92/tianji)** — Birth-chart (BaZi) calculation and AI narrative interpretation, modified from [Brhiza/mingyu](https://github.com/Brhiza/mingyu) (AGPL-3.0) · [Try it live](https://tianji.park-ai-intel.com/)
 
 ## Principles & Predictions
 
-- **[Principles](https://park-ai-intel.com/principles)**：遇到工作、关系与创造中的选择时，拿来对照。你可以留下自己的故事。
-- **[Predictions](https://park-ai-intel.com/predictions)**：把对 AI、社会、公司与市场的判断写下来，交给时间检验。欢迎赞同，也欢迎质疑。
+- **[Principles](https://park-ai-intel.com/principles)** — Decision frameworks for work, relationships, and building. Share your own story.
+- **[Predictions](https://park-ai-intel.com/predictions)** — Public bets on AI, society, companies, and markets, left for time to grade. Pushback welcome.
 
-## 一起做点有用的事
+## Work With Me
 
-如果你想把 AI 接进内容生产、交易研究或自己的产品，带上一个具体场景和想得到的结果：[聊聊你的问题](https://park-ai-intel.com/consultation)
+Want to wire AI into your content workflow, trading research, or product? Bring a concrete scenario and target outcome: [Let's talk](https://park-ai-intel.com/consultation).
