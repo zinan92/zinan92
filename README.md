@@ -2,44 +2,52 @@
 
 **把独立思考，做成用得上的产品。**
 
-我是 Park，会做内容的交易员。我用 AI 构建交易与投研工具、内容生产工作台，以及可以交给真实用户的独立产品。
+我是 Park，会做内容的交易员。我用 AI 构建内容生产工作台、交易与投研工具，以及可以交给真实用户的独立产品。
 
 [网站](https://park-ai-intel.com/) · [Principles](https://park-ai-intel.com/principles) · [Predictions](https://park-ai-intel.com/predictions) · [联系我](https://park-ai-intel.com/consultation)
 
-## 从你正在做的事开始
+## Start Here
 
-| 你在做什么 | 可以从哪里开始 | 能得到什么 |
-|---|---|---|
-| 交易与投研 | [Park 晨报](https://park-ai-intel.com/daily/) · [Trading 工具库](https://github.com/zinan92/trading) | 看市场信息、行情与研究工具，形成自己的判断 |
-| 自媒体与知识产品 | [选题工作台](https://xuanti.park-ai-intel.com/) · [Park 研习室](https://park-ai-intel.com/products/wechat-xingqiu/) | 把素材变成选题、作品，再交付给读者 |
-| 开发与 AI 工作流 | [repo-evals](https://github.com/zinan92/repo-evals) · [loop](https://github.com/zinan92/loop) · [小程序交付](https://github.com/zinan92/wechat-miniprogram-shipping) | 评估工具、组织开发、核对交付结果 |
+- 🎬 **[Park Studio](https://github.com/zinan92/park-studio)** — 本地开源内容操作系统：选题 → 双模式本地剪辑 → 12 平台按需填表 → 真实复盘（提供 macOS DMG）
+- 📓 **[Trade Journal](https://github.com/zinan92/trade-journal)** — 本地交易员日终闭环工作台：盘前 3 步 4-EMA 扫图定调 → 盘后文章式复盘 → 每日日历归档
+- 🏋️ **[轻练 · get-fit](https://github.com/zinan92/get-fit)** — 健身私教全景会员工作台与 Remote MCP Server，自动生成每周一页纸 A4 周报 PDF
+- 📰 **[Daily Newsletter](https://github.com/zinan92/daily-newsletter)** — 本地优先的 AI 每日晨报管线：抓取官方 / X / 播客 / 公众号，自动凝练为中文日报
+- 📈 **[Trading System](https://github.com/zinan92/trading-system)** — Park 交易平台：GridMind 面板 + 交易台 + broker / strategy / kline 包（Testnet / Paper）
+- 🔥 **[Douyin Teardown](https://github.com/zinan92/douyin-teardown)** — 拆解一条抖音视频为什么爆：点赞倍数 + 带时间戳的结构拆解报告
 
-## 给所有人的 Principles 与 Predictions
+## Projects
 
-[Principles](https://park-ai-intel.com/principles)：遇到工作、关系与创造中的选择时，拿来对照。你可以留下自己的故事。
+### 内容 · Content
 
-[Predictions](https://park-ai-intel.com/predictions)：把对 AI、社会、公司与市场的判断写下来，交给时间检验。欢迎赞同，也欢迎质疑。
+- 🎬 **[park-studio](https://github.com/zinan92/park-studio)** — 本地开源内容操作系统：选题、双模式本地剪辑、12 平台按需 CDP 只填不发、真实复盘
+- 📰 **[daily-newsletter](https://github.com/zinan92/daily-newsletter)** — 本地优先 AI 每日晨报管线：抓取信息源、AI 筛选撰写、输出 Markdown / HTML / PNG 与飞书回执
+- 🔥 **[douyin-teardown](https://github.com/zinan92/douyin-teardown)** — 一条抖音视频为什么爆：输入链接，输出点赞倍数与带时间戳的结构拆解 `report.md`
+- 🎞️ **[park-video-v2](https://github.com/zinan92/park-video-v2)** — 口播视频加动效：AI 规划，脚本渲染与检查
+- ✍️ **[park-writing](https://github.com/zinan92/park-writing)** — Park 的写作框架：从口述 / SRT / 笔记到框架卡、评分与逐字稿
+- 🌳 **[park-knowledge](https://github.com/zinan92/park-knowledge)** — 知识树：把外部知识内化成领域专家 Skill
+- 🎥 **[AI-videos](https://github.com/zinan92/AI-videos)** — AI 虚拟人物换装 + 动作迁移视频生成 pipeline
+- 🌐 线上入口：[选题工作台](https://xuanti.park-ai-intel.com/) · [Park 晨报](https://park-ai-intel.com/daily/) · [Park 研习室](https://park-ai-intel.com/products/wechat-xingqiu/)
 
-## Product Lab
+### 交易 · Trading
 
-| 产品 | 适合谁 / 能做什么 | 当前入口 |
-|---|---|---|
-| **选题工作台** | 靠内容获客的老板和他的内容团队：找 → 写 → 剪 → 发 → 盘，一个网页走完 | [¥9.9 试 3 天](https://xuanti.park-ai-intel.com/) · 之后 ¥99.9/月 |
-| **内容工作台（开源）** | 想自己部署的内容创作者：同一条 找 → 写 → 剪 → 发 → 盘，装在自己的 Mac 上，用自己的 AI 和 key | [源码](https://github.com/zinan92/content-studio-open) · MIT，README 写给你的 AI 照着装 |
-| **Park 研习室** | 研究者、知识创作者：电脑发布 Markdown / HTML，手机管理，微信会员阅读 | [产品介绍](https://park-ai-intel.com/products/wechat-xingqiu/) · 可演示，微信正式发布待完成 |
-| **天机** | 传统文化爱好者：出生信息 → 命盘与 AI 故事解读 → 追问与分享 | [直接体验](https://tianji.park-ai-intel.com/) · [产品介绍](https://park-ai-intel.com/products/tianji/) |
-| **轻练** | 私教与学员：教练审阅 30 天训练和饮食计划，学员每日打卡反馈 | [产品介绍](https://park-ai-intel.com/products/get-fit/) · 体验版筹备中 |
+- 📓 **[trade-journal](https://github.com/zinan92/trade-journal)** — 本地交易员日终闭环工作台：48 标的跨市场行情、4-EMA 交互 K 线、盘后复盘与纪律库
+- 📈 **[trading-system](https://github.com/zinan92/trading-system)** — Park 交易平台：GridMind 面板 + 交易台 + broker / strategy / kline 包
+- 📊 **[datafeed](https://github.com/zinan92/datafeed)** — 跨市场行情数据服务：A 股 / 美股 / 加密 / 商品 OHLCV K 线
+- 📡 **[intel](https://github.com/zinan92/intel)** — 情报采集引擎：10+ 信息源抓取、LLM 评分与跨源事件聚类
+- 🧭 **[watchlist](https://github.com/zinan92/watchlist)** — 行情与新闻共用的标的注册表：6 条宏观主线 / 24 个中观赛道 / 109 个标的
+- 📑 **[equity-research](https://github.com/zinan92/equity-research)** — A 股长期投委会 + 证据快照深度研报平台
+- 🧪 **[backtest](https://github.com/zinan92/backtest)** — 策略回测验证：输出胜率、盈亏比与最大回撤
 
-天机排盘服务基于 [Brhiza / Mingyu](https://github.com/Brhiza/mingyu) 的开源实现，[修改版源码](https://github.com/zinan92/tianji)保留署名与 AGPL-3.0 许可证。
+### 其他产品 · Other Products
 
-## 我的仓库与参考库
+- 🏋️ **[get-fit（轻练）](https://github.com/zinan92/get-fit)** — 私教全景工作台与 Remote MCP Server，沉淀课表、餐食热量与每周一页纸 A4 周报（[产品介绍](https://park-ai-intel.com/products/get-fit/)）
+- 🔮 **[tianji（天机）](https://github.com/zinan92/tianji)** — 输入生日排八字与 AI 故事解读，基于 [Brhiza/mingyu](https://github.com/Brhiza/mingyu) 修改（AGPL-3.0）· [直接体验](https://tianji.park-ai-intel.com/)
 
-[Trading](https://github.com/zinan92/trading) · [Content Production](https://github.com/zinan92/content-production) · [Product Lab](https://github.com/zinan92/product-lab)
+## Principles & Predictions
 
-每个目录都标明自有仓库与外部参考。外部项目固定到具体 commit，定期更新。Park OS 是私有的个人运营与目录维护层。
+- **[Principles](https://park-ai-intel.com/principles)**：遇到工作、关系与创造中的选择时，拿来对照。你可以留下自己的故事。
+- **[Predictions](https://park-ai-intel.com/predictions)**：把对 AI、社会、公司与市场的判断写下来，交给时间检验。欢迎赞同，也欢迎质疑。
 
 ## 一起做点有用的事
 
-如果你想把 AI 接进交易研究、内容生产或自己的产品，带上一个具体场景和想得到的结果。
-
-[聊聊你的问题](https://park-ai-intel.com/consultation)
+如果你想把 AI 接进内容生产、交易研究或自己的产品，带上一个具体场景和想得到的结果：[聊聊你的问题](https://park-ai-intel.com/consultation)
